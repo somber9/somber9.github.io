@@ -3,148 +3,148 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Somber / Bener Su — Undergraduate researcher in Biomedical Engineering at Nanjing University, working on AI for healthcare and brain-computer interfaces." />
   <title>Somber | Bener Su</title>
+  <meta name="description" content="Somber — Bener Su, undergraduate researcher in AI, brain-computer interfaces, and AI for healthcare." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="grain" aria-hidden="true"></div>
   <header class="site-header" data-header>
-    <a class="brand" href="#top" aria-label="Somber home">
-      <span class="brand-main">Somber</span>
-      <span class="brand-sub">Bener Su</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="#top" aria-label="Somber home">Somber</a>
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
-      <a href="#beyond">Beyond Research</a>
+      <a href="#beyond">Beyond</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="opening panel reveal">
-      <div class="cloud cloud-one"></div>
-      <div class="cloud cloud-two"></div>
-      <p class="small-kicker">Somber</p>
-      <h1>让一朵云推动另一朵云。</h1>
-      <p class="opening-line">Passing forward the kindness I have received, through research.</p>
+    <section class="opening panel" aria-label="Opening statement">
+      <div class="opening-inner reveal">
+        <p class="small-label">Somber</p>
+        <h1>让一朵云推动另一朵云。</h1>
+        <p class="opening-line">Passing kindness forward, through research.</p>
+      </div>
     </section>
 
-    <section class="hero section reveal" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">AI for Healthcare · Brain–Computer Interfaces</p>
-        <h2>Bener Su</h2>
-        <p class="hero-role">Undergraduate Researcher<br>Biomedical Engineering, Nanjing University</p>
-        <p class="hero-text">I am exploring how artificial intelligence can help understand brain signals, support clinical insight, and make healthcare technologies warmer and more trustworthy.</p>
-        <div class="hero-actions">
+    <section class="hero panel" aria-label="Bener Su introduction">
+      <div class="hero-copy reveal">
+        <p class="small-label">Bener Su · Undergraduate Researcher</p>
+        <h2>Building AI that cares.</h2>
+        <p class="lead">
+          I study Biomedical Engineering at Nanjing University and explore Artificial Intelligence,
+          Brain–Computer Interfaces, and AI for Healthcare.
+        </p>
+        <div class="text-links" aria-label="Main actions">
           <a href="#research">Explore research</a>
-          <a href="mailto:sober_9@foxmail.com">Contact</a>
+          <a href="mailto:sober_9@foxmail.com">Email</a>
+          <a href="https://github.com/Somber9" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
-      <figure class="hero-image">
-        <img src="assets/somber-forest.jpg" alt="Bener Su in a quiet forest" />
-        <figcaption>Outside the lab, still looking for quiet questions.</figcaption>
+      <figure class="hero-image reveal">
+        <img src="assets/forest-somber.jpg" alt="Bener Su in a quiet forest" />
+        <figcaption>Outside the lab, I like quiet places, forests, and moments that make people slow down.</figcaption>
       </figure>
     </section>
 
-    <section class="section philosophy reveal" aria-labelledby="philosophy-title">
+    <section class="essay panel" aria-label="About">
       <div class="section-index">01</div>
-      <div class="section-title">
-        <h2 id="philosophy-title">Philosophy</h2>
-      </div>
-      <div class="section-body prose-large">
-        <p>Research, to me, is more than publishing papers. I hope the warmth I have received from society can one day be transformed into technologies that improve human health and help more people.</p>
+      <div class="section-rule"></div>
+      <div class="essay-grid reveal">
+        <h2>Why research?</h2>
+        <div class="essay-copy">
+          <p>
+            I have received warmth from many people along the way. Research is one way I hope to pass that warmth forward — not as a slogan, but as a practice.
+          </p>
+          <p>
+            My current interests lie at the intersection of machine learning, neuroscience, and healthcare. I want to build systems that help us understand neural signals and, one day, improve the lives of patients and families.
+          </p>
+          <p class="advisor">Advisor: <strong>Prof. Ran Wang</strong>, Biomedical Engineering, Nanjing University.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section research reveal" id="research" aria-labelledby="research-title">
+    <section id="research" class="research panel" aria-label="Research">
       <div class="section-index">02</div>
-      <div class="section-title">
-        <h2 id="research-title">Research</h2>
-      </div>
-      <div class="section-body research-grid">
+      <div class="section-rule"></div>
+      <div class="research-layout reveal">
         <div>
-          <p class="eyebrow">Current Research</p>
-          <h3>BrainNeRF</h3>
-          <p>Physics-guided neural field for EEG spatial super-resolution: reconstructing high-density brain signals from sparse electrode observations.</p>
-          <p class="tagline">Preparing for AAAI submission</p>
+          <p class="small-label orange">Current Research</p>
+          <h2>BrainNeRF</h2>
+          <p class="lead small">
+            Physics-guided neural field for EEG spatial super-resolution.
+          </p>
+          <p class="muted">
+            We ask whether AI can recover missing EEG information from sparse observations, helping low-density recordings approach high-density brain signal representations.
+          </p>
+          <span class="pill">Preparing AAAI Submission</span>
         </div>
-        <div class="flow-card" aria-label="BrainNeRF research flow">
-          <div class="flow-step">
-            <span class="brain-icon" aria-hidden="true"></span>
-            <strong>EEG Signals</strong>
+        <div class="flow-card" aria-label="BrainNeRF workflow diagram">
+          <div class="flow-step sensors">
+            <span>EEG Sensors</span>
+            <div class="sensor-dots"></div>
           </div>
-          <span class="arrow">→</span>
-          <div class="flow-step network">
-            <span></span><span></span><span></span><span></span><span></span><span></span>
-            <strong>BrainNeRF</strong>
+          <div class="arrow">→</div>
+          <div class="flow-step net">
+            <span>BrainNeRF</span>
+            <div class="network-lines"></div>
           </div>
-          <span class="arrow">→</span>
+          <div class="arrow">→</div>
           <div class="flow-step topo">
-            <span></span>
-            <strong>Reconstruction</strong>
+            <span>High-resolution EEG</span>
+            <div class="topomap"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section projects reveal" id="projects" aria-labelledby="projects-title">
+    <section id="projects" class="projects panel" aria-label="Projects">
       <div class="section-index">03</div>
-      <div class="section-title">
-        <h2 id="projects-title">Projects</h2>
+      <div class="section-rule"></div>
+      <div class="section-head reveal">
+        <h2>Projects</h2>
+        <p>Research directions shaped by AI, biomedical engineering, and human health.</p>
       </div>
-      <div class="section-body project-list">
+      <div class="project-grid reveal">
         <article>
-          <p class="eyebrow">Brain–Computer Interface</p>
+          <p class="small-label">01</p>
           <h3>BrainNeRF</h3>
-          <p>EEG spatial super-resolution with neural field representation and physics-guided learning.</p>
+          <p>EEG spatial super-resolution using continuous neural representations and physics-guided learning.</p>
         </article>
         <article>
-          <p class="eyebrow">AI for Healthcare</p>
+          <p class="small-label">02</p>
           <h3>Alzheimer’s Disease</h3>
-          <p>Early diagnosis research with multimodal analysis of olfactory, EEG, and MRI signals.</p>
+          <p>Exploring multimodal signals such as EEG, MRI, and olfactory information for early diagnosis.</p>
         </article>
         <article>
-          <p class="eyebrow">Biomedical Materials</p>
+          <p class="small-label">03</p>
           <h3>Conductive Hydrogel</h3>
-          <p>Challenge Cup project exploring metal hydrogel materials for biomedical sensing.</p>
+          <p>Challenge Cup project on biomedical materials and sensing-oriented hydrogel systems.</p>
         </article>
       </div>
     </section>
 
-    <section class="section beyond reveal" id="beyond" aria-labelledby="beyond-title">
+    <section id="beyond" class="beyond panel" aria-label="Beyond research">
       <div class="section-index">04</div>
-      <div class="section-title">
-        <h2 id="beyond-title">Beyond Research</h2>
-      </div>
-      <div class="section-body beyond-grid">
-        <div class="beyond-text">
-          <p class="eyebrow">Outside the lab</p>
-          <p>I enjoy slow walks, quiet forests, photography, reading, and moments that remind me why technology should remain close to human life.</p>
-          <p class="quote">“I want my research to stay connected to people, not only to models.”</p>
+      <div class="section-rule"></div>
+      <div class="beyond-layout reveal">
+        <div>
+          <p class="small-label orange">Beyond Research</p>
+          <h2>Still learning how to be a whole person.</h2>
+          <p class="muted">
+            I like forests, reading, quiet walks, and observing how people and ideas connect. These moments remind me why technology should stay close to life.
+          </p>
         </div>
-        <figure class="moment-card">
-          <img src="assets/somber-moment.jpg" alt="A quiet personal moment in the forest" />
-        </figure>
+        <img src="assets/forest-detail.jpg" alt="A quiet forest path" />
       </div>
     </section>
 
-    <section class="section education reveal" aria-labelledby="education-title">
-      <div class="section-index">05</div>
-      <div class="section-title">
-        <h2 id="education-title">Education</h2>
-      </div>
-      <div class="section-body education-content">
-        <p><strong>2024.09 – Present</strong><br>B.S. in Biomedical Engineering<br>Nanjing University</p>
-        <p><strong>Advisor</strong><br>Prof. Ran Wang</p>
-      </div>
-    </section>
-
-    <section class="closing panel reveal" id="contact">
-      <div class="closing-inner">
+    <section id="contact" class="final panel" aria-label="Final note and contact">
+      <div class="final-note reveal">
         <p>如果有一天，</p>
         <p>我的研究能够帮助一个人重新开口说话，</p>
         <p>或者帮助一个家庭更早发现疾病，</p>
@@ -153,10 +153,10 @@
         <p>都值得。</p>
         <span>—— 让一朵云推动另一朵云</span>
       </div>
-      <footer>
+      <footer class="contact-row reveal">
+        <strong>Bener Su · Somber</strong>
         <a href="mailto:sober_9@foxmail.com">sober_9@foxmail.com</a>
         <a href="https://github.com/Somber9" target="_blank" rel="noreferrer">GitHub</a>
-        <span>© Bener Su</span>
       </footer>
     </section>
   </main>
