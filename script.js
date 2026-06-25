@@ -1,4 +1,1 @@
-const btn=document.querySelector('[data-menu]');
-const links=document.querySelector('.links');
-if(btn&&links){btn.addEventListener('click',()=>links.classList.toggle('open'));}
-document.querySelectorAll('.links a').forEach(a=>{if(a.href===location.href)a.classList.add('active')});
+document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('[data-menu]');const l=document.querySelector('.links');if(b&&l){b.addEventListener('click',()=>l.classList.toggle('open'));}const current=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.links a').forEach(a=>{const href=a.getAttribute('href');if(href===current)a.classList.add('active');});});
