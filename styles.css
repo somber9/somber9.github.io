@@ -375,3 +375,157 @@ a {
     padding: 76px 0;
   }
 }
+/* ===== Scroll polish ===== */
+
+.nav {
+  transition:
+    background 260ms ease,
+    box-shadow 260ms ease,
+    border-color 260ms ease;
+}
+
+.nav.scrolled {
+  background: rgba(250, 248, 244, 0.96);
+  box-shadow: 0 12px 36px rgba(32, 26, 20, 0.08);
+}
+
+.opening {
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.opening.fade-out {
+  opacity: 0.82;
+  transform: translateY(-18px);
+}
+
+/* Reveal animation */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(54px);
+  transition:
+    opacity 850ms ease,
+    transform 850ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Redesigned intro */
+
+.intro {
+  min-height: 86vh;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.86fr);
+  gap: clamp(56px, 8vw, 110px);
+}
+
+.intro h2 {
+  font-size: clamp(52px, 7vw, 86px);
+}
+
+.role {
+  font-size: clamp(20px, 2vw, 25px);
+  font-weight: 600;
+  color: var(--purple);
+}
+
+.meta {
+  color: #6b665f;
+  font-size: clamp(17px, 1.8vw, 21px);
+}
+
+.desc {
+  max-width: 680px;
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.68;
+  margin-top: 46px;
+  color: #292622;
+}
+
+.focus-list {
+  display: grid;
+  gap: 0;
+  max-width: 620px;
+  margin-top: 56px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.focus-list div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 26px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.focus-list div:last-child {
+  border-bottom: 0;
+}
+
+.focus-list span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.focus-list strong {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  height: min(68vh, 620px);
+  min-height: 460px;
+  border-radius: 0;
+  box-shadow: 0 28px 90px rgba(42, 33, 25, 0.16);
+}
+
+.photo figcaption {
+  margin-top: 18px;
+  font-size: 15px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Better opening scale */
+
+.opening h1 {
+  font-size: clamp(44px, 6vw, 78px);
+}
+
+.opening-en {
+  font-size: clamp(17px, 1.8vw, 22px);
+}
+
+.small-label {
+  color: var(--purple);
+}
+
+/* Mobile */
+
+@media (max-width: 860px) {
+  .intro {
+    min-height: auto;
+    gap: 46px;
+  }
+
+  .focus-list div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .photo img {
+    height: 420px;
+    min-height: 0;
+  }
+}
