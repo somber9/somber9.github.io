@@ -1,365 +1,373 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700&display=swap");
+import Image from "next/image";
 
-:root {
-  --bg: #fbfaf7;
-  --paper: #ffffff;
-  --text: #151515;
-  --muted: #64615d;
-  --line: #e8e1d8;
-  --purple: #6c63ff;
-  --purple-soft: #f0eeff;
-  --brown: #a65d37;
-}
+export default function Home() {
+  return (
+    <main className="site">
 
-* {
-  box-sizing: border-box;
-}
+      {/* Navbar */}
 
-html {
-  scroll-behavior: smooth;
-}
+      <nav className="nav">
+        <div className="logo">Somber</div>
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
+        <div className="nav-links">
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#beyond">Beyond</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+      {/* Opening */}
 
-.site {
-  min-height: 100vh;
-}
+      <section className="cloud-hero">
 
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 56px;
-  background: rgba(251, 250, 247, 0.88);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--line);
-}
+        <div>
 
-.logo {
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-}
+          <div className="kicker">
+            SOMBER
+          </div>
 
-.nav-links {
-  display: flex;
-  gap: 34px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
-}
+          <h1 className="cloud-title">
+            让一朵云推动另一朵云。
+          </h1>
 
-.nav-links a:hover {
-  color: var(--purple);
-}
+          <div className="cloud-subtitle">
+            Passing forward the kindness I have received.
+          </div>
 
-.section {
-  width: min(1120px, calc(100% - 48px));
-  margin: 0 auto;
-  padding: 110px 0;
-  border-bottom: 1px solid var(--line);
-}
+        </div>
 
-.cloud-hero {
-  min-height: 78vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 80px 24px;
-  background:
-    radial-gradient(circle at 76% 18%, rgba(108, 99, 255, 0.12), transparent 34%),
-    radial-gradient(circle at 18% 76%, rgba(166, 93, 55, 0.1), transparent 35%),
-    var(--bg);
-}
+      </section>
 
-.kicker {
-  color: var(--brown);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
-  margin-bottom: 28px;
-}
+      {/* Hero */}
 
-.cloud-title {
-  font-family: "Noto Serif SC", serif;
-  font-size: clamp(52px, 7vw, 88px);
-  line-height: 1.08;
-  letter-spacing: -0.05em;
-  margin: 0;
-}
+      <section className="section">
 
-.cloud-subtitle {
-  margin-top: 30px;
-  font-size: clamp(18px, 2vw, 24px);
-  color: var(--muted);
-  font-style: italic;
-}
+        <div className="hero-grid">
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 80px;
-  align-items: center;
-}
+          <div>
 
-.eyebrow {
-  color: var(--purple);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
+            <div className="eyebrow">
+              AI FOR HEALTHCARE · BRAIN–COMPUTER INTERFACES
+            </div>
 
-.hero-title {
-  font-size: clamp(54px, 7vw, 88px);
-  line-height: 0.95;
-  letter-spacing: -0.07em;
-  margin: 0 0 20px;
-}
+            <h1 className="hero-title">
+              Bener Su
+            </h1>
 
-.hero-role {
-  font-size: 24px;
-  color: var(--purple);
-  font-weight: 700;
-  margin-bottom: 10px;
-}
+            <div className="hero-role">
+              Undergraduate Researcher
+            </div>
 
-.hero-meta {
-  font-size: 20px;
-  color: var(--muted);
-  margin-bottom: 34px;
-}
+            <div className="hero-meta">
+              Biomedical Engineering · Nanjing University
+            </div>
 
-.hero-copy {
-  font-size: 22px;
-  line-height: 1.55;
-  color: #2d2b29;
-  max-width: 620px;
-}
+            <p className="hero-copy">
 
-.hero-actions {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 34px;
-}
+              I explore how artificial intelligence can understand
+              brain signals and build trustworthy technologies for
+              healthcare, neuroscience and human well-being.
 
-.btn {
-  border: 1px solid var(--line);
-  background: var(--paper);
-  padding: 13px 22px;
-  border-radius: 999px;
-  font-size: 15px;
-  font-weight: 700;
-  transition: 0.2s ease;
-}
+            </p>
 
-.btn:hover {
-  border-color: var(--purple);
-  color: var(--purple);
-  transform: translateY(-2px);
-}
+            <div className="hero-actions">
 
-.btn.primary {
-  background: var(--purple);
-  border-color: var(--purple);
-  color: white;
-}
+              <a className="btn primary">
+                Research
+              </a>
 
-.forest-card {
-  border-radius: 28px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--paper);
-  box-shadow: 0 28px 80px rgba(40, 30, 20, 0.12);
-}
+              <a className="btn">
+                GitHub
+              </a>
 
-.forest-card img {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
+              <a className="btn">
+                Email
+              </a>
 
-.section-row {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 70px;
-  align-items: start;
-}
+            </div>
 
-.section-label {
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  margin: 0;
-}
+          </div>
 
-.section-label::after {
-  content: "";
-  display: block;
-  width: 44px;
-  height: 3px;
-  background: var(--purple);
-  margin-top: 18px;
-}
+          <div className="forest-card">
 
-.text-block {
-  font-size: 19px;
-  line-height: 1.75;
-  color: #34312e;
-  max-width: 760px;
-}
+            <Image
+              src="/forest.jpeg"
+              alt="forest"
+              width={900}
+              height={1200}
+            />
 
-.research-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 34px;
-  align-items: center;
-}
+          </div>
 
-.research-title {
-  font-size: 36px;
-  letter-spacing: -0.05em;
-  margin: 8px 0 12px;
-}
+        </div>
 
-.tag {
-  display: inline-flex;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: var(--purple-soft);
-  color: var(--purple);
-  font-size: 13px;
-  font-weight: 700;
-}
+      </section>
 
-.flow {
-  display: grid;
-  gap: 16px;
-  padding: 28px;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  background: var(--paper);
-}
+      {/* Philosophy */}
 
-.flow-step {
-  padding: 18px 20px;
-  border-radius: 18px;
-  background: #fafafa;
-  border: 1px solid #eee;
-  font-weight: 700;
-}
+      <section className="section">
 
-.arrow {
-  color: var(--purple);
-  font-size: 24px;
-  text-align: center;
-}
+        <div className="section-row">
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
+          <h2 className="section-label">
+            Philosophy
+          </h2>
 
-.card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 26px;
-  min-height: 190px;
-}
+          <div className="text-block">
 
-.card h3 {
-  margin: 0 0 12px;
-  font-size: 22px;
-  letter-spacing: -0.04em;
-}
+            <p>
 
-.card p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.6;
-}
+              我一直相信，
 
-.beyond-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
+              <strong>「让一朵云推动另一朵云」</strong>
 
-.final {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 80px 24px;
-  background: var(--text);
-  color: #f8f3ec;
-}
+              不只是人与人之间的善意，也是科研存在的意义。
 
-.final-text {
-  font-family: "Noto Serif SC", serif;
-  font-size: clamp(34px, 5vw, 68px);
-  line-height: 1.45;
-  letter-spacing: -0.04em;
-  max-width: 980px;
-}
+            </p>
 
-.final-note {
-  margin-top: 34px;
-  color: rgba(248, 243, 236, 0.7);
-  font-size: 20px;
-}
+            <p>
 
-.footer-links {
-  margin-top: 34px;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  color: rgba(248, 243, 236, 0.7);
-}
+              希望未来有一天，我所做的研究，
+              能把社会给予我的温暖，
+              再传递给更多的人。
 
-@media (max-width: 860px) {
-  .nav {
-    padding: 22px 24px;
-  }
+            </p>
 
-  .nav-links {
-    gap: 18px;
-    font-size: 14px;
-  }
+          </div>
 
-  .hero-grid,
-  .section-row,
-  .research-box,
-  .project-grid,
-  .beyond-grid {
-    grid-template-columns: 1fr;
-  }
+        </div>
 
-  .section {
-    padding: 78px 0;
-  }
+      </section>
 
-  .forest-card img {
-    height: 420px;
-  }
+      {/* Research */}
+
+      <section
+        className="section"
+        id="research"
+      >
+
+        <div className="research-box">
+
+          <div>
+
+            <span className="tag">
+              Current Research
+            </span>
+
+            <h2 className="research-title">
+              BrainNeRF
+            </h2>
+
+            <p className="text-block">
+
+              Reconstructing high-density EEG from sparse observations
+              using neural fields, towards reliable Brain–Computer Interfaces.
+
+            </p>
+
+          </div>
+
+          <div className="flow">
+
+            <div className="flow-step">
+              16-channel EEG
+            </div>
+
+            <div className="arrow">↓</div>
+
+            <div className="flow-step">
+              BrainNeRF
+            </div>
+
+            <div className="arrow">↓</div>
+
+            <div className="flow-step">
+              32-channel Reconstruction
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Projects */}
+
+      <section
+        className="section"
+        id="projects"
+      >
+
+        <div className="project-grid">
+
+          <div className="card">
+
+            <h3>
+              BrainNeRF
+            </h3>
+
+            <p>
+              EEG Spatial Super Resolution
+            </p>
+
+          </div>
+
+          <div className="card">
+
+            <h3>
+              Alzheimer's Disease
+            </h3>
+
+            <p>
+              Early diagnosis using EEG, MRI and olfactory biomarkers.
+            </p>
+
+          </div>
+
+          <div className="card">
+
+            <h3>
+              Conductive Hydrogel
+            </h3>
+
+            <p>
+              Biomedical conductive materials for wearable sensing.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Beyond */}
+
+      <section
+        className="section"
+        id="beyond"
+      >
+
+        <div className="section-row">
+
+          <h2 className="section-label">
+            Beyond
+          </h2>
+
+          <div className="beyond-grid">
+
+            <div className="card">
+
+              <h3>
+                Reading
+              </h3>
+
+              <p>
+                AI, neuroscience, philosophy and history.
+              </p>
+
+            </div>
+
+            <div className="card">
+
+              <h3>
+                Photography
+              </h3>
+
+              <p>
+                Forests, campuses, light and quiet moments.
+              </p>
+
+            </div>
+
+            <div className="card">
+
+              <h3>
+                Curiosity
+              </h3>
+
+              <p>
+                Exploring the intersection of intelligence,
+                medicine and humanity.
+              </p>
+
+            </div>
+
+            <div className="card">
+
+              <h3>
+                Daily Life
+              </h3>
+
+              <p>
+                Outside the lab, still looking for quiet questions.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Ending */}
+
+      <section
+        className="final"
+        id="contact"
+      >
+
+        <div>
+
+          <div className="final-text">
+
+            如果有一天，
+
+            <br /><br />
+
+            我的研究能够帮助一个人重新开口说话，
+
+            <br /><br />
+
+            或者帮助一个家庭更早发现疾病，
+
+            <br /><br />
+
+            那么，
+
+            <br /><br />
+
+            那些无数个深夜，
+
+            <br /><br />
+
+            都值得。
+
+          </div>
+
+          <div className="final-note">
+
+            —— 让一朵云推动另一朵云
+
+          </div>
+
+          <div className="footer-links">
+
+            <a href="mailto:sober_9@foxmail.com">
+              Email
+            </a>
+
+            <a href="https://github.com/somber9">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
 }
