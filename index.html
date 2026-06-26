@@ -4,180 +4,243 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Somber | Bener Su</title>
-  <meta name="description" content="Somber / Bener Su — AI for Healthcare, Brain–Computer Interfaces, and Biomedical Engineering." />
+  <meta name="description" content="Bener Su / Somber — AI for Healthcare, BCI, and Biomedical Engineering." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="nav">
-    <a class="brand" href="#top">Somber</a>
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#beyond">Beyond</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="nav">
+  <a class="brand" href="#top">Somber</a>
+  <nav>
+    <a href="#research" data-i18n="navResearch">Research</a>
+    <a href="#publications" data-i18n="navPublications">Publications</a>
+    <a href="#projects" data-i18n="navProjects">Projects</a>
+    <a href="#fragments" data-i18n="navFragments">Fragments</a>
+    <a href="#contact" data-i18n="navContact">Contact</a>
+    <button class="lang-toggle" id="langToggle">中文</button>
+  </nav>
+</header>
 
-  <main id="top">
-    <section class="opening">
+<main id="top">
+  <section class="opening">
+    <div class="opening-inner">
       <p class="small-label">SOMBER</p>
-      <h1>让一朵云推动另一朵云。</h1>
-      <p class="opening-en">Passing forward the kindness I have received.</p>
-    </section>
+      <h1 data-i18n="openingTitle">让一朵云推动另一朵云。</h1>
+      <p class="opening-en" data-i18n="openingSubtitle">Passing forward the kindness I have received.</p>
 
-    <section class="intro section reveal">
-      <div class="intro-text">
-        <p class="eyebrow">AI FOR HEALTHCARE · BRAIN–COMPUTER INTERFACES</p>
+      <div class="hero-quote">
+        <p data-i18n="heroQuote1">Research, to me, is not only about solving problems.</p>
+        <p data-i18n="heroQuote2">It is about carrying kindness forward.</p>
+      </div>
+    </div>
+  </section>
 
-        <h2>Bener Su</h2>
+  <section class="intro section reveal">
+    <div class="intro-text">
+      
 
-        <div class="intro-rule"></div>
+      <h2>Bener Su</h2>
 
-        <p class="role">Undergraduate Researcher</p>
-        <p class="meta">Biomedical Engineering · Nanjing University</p>
+      
 
-        <p class="desc">
-          I am interested in building trustworthy AI systems that bridge
-          neuroscience, medicine, and human well-being through Brain–Computer
-          Interfaces and computational intelligence.
-        </p>
+      <div class="intro-card">
+        <p class="card-title" data-i18n="eduLabel">EDUCATION</p>
 
-        <div class="focus-panel">
-          <p class="focus-kicker">Current Focus</p>
+        <div class="edu-item">
+          <img class="edu-logo-img" src="nju-logo.png" alt="Nanjing University logo">
 
-          <div class="focus-main">
-            <h3>BrainNeRF</h3>
-            <p>Physics-guided EEG Spatial Super-Resolution</p>
-          </div>
+          <div>
+            <h3 data-i18n="eduSchool">Nanjing University</h3>
 
-          <div class="focus-tags">
-            <span>AI for Healthcare</span>
-            <span>Brain–Computer Interfaces</span>
-            <span>Computational Neuroscience</span>
+            <p data-i18n="eduDegree">
+              Bachelor of Engineering<br>
+              Biomedical Engineering
+            </p>
+
+            <span data-i18n="eduTime">
+              Sep. 2024 — Jun. 2028
+            </span>
           </div>
         </div>
       </div>
 
-      <figure class="photo">
-        <img src="forest.jpeg" alt="Bener Su in a forest" />
-        <figcaption>Outside the lab, still looking for quiet questions.</figcaption>
-      </figure>
-    </section>
+      <div class="intro-card">
+        <p class="card-title" data-i18n="focusLabel">CURRENT FOCUS</p>
 
-    <section class="philosophy section reveal">
-      <div class="section-title">
-        <span>01</span>
-        <h2>Philosophy</h2>
-      </div>
+        <h3 class="focus-title" data-i18n="focusTitle">
+          BrainNeRF
+        </h3>
 
-      <div class="section-content">
-        <p class="large-cn">
-          我希望把社会给予我的温暖，
-          通过研究，再传递给更多的人。
+        <p class="focus-desc" data-i18n="focusDesc">
+          Physics-guided EEG Spatial Super-Resolution
         </p>
 
-        <p>
-          Research, to me, is not only about solving technical problems. It is also a way
-          to carry kindness forward — from people who once helped me, to people I may never meet.
+        <p class="focus-note" data-i18n="focusNote">
+          Ongoing research toward robust neural field reconstruction for Brain–Computer Interfaces.
         </p>
-      </div>
-    </section>
 
-    <section class="research section reveal" id="research">
-      <div class="section-title">
-        <span>02</span>
-        <h2>Research</h2>
+        <div class="focus-tags">
+          <span data-i18n="tag1">AI for Healthcare</span>
+          <span data-i18n="tag2">Brain–Computer Interfaces</span>
+          <span data-i18n="tag3">Computational Neuroscience</span>
+        </div>
       </div>
+    </div>
 
-      <div class="research-grid">
+    <figure class="photo">
+      <img src="forest.jpeg" alt="Bener Su in a forest" />
+      <figcaption data-i18n="photoCaption">
+        Outside the lab, still looking for quiet questions.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="section reveal" id="research">
+    <div class="section-title">
+      <span>01</span>
+      <h2 data-i18n="researchTitle">Research Interests</h2>
+    </div>
+
+    <div class="research-cards">
+      <article>
+        <h3 data-i18n="r1Title">AI for Healthcare</h3>
+        <p data-i18n="r1Desc">Building trustworthy AI systems for medical data, clinical insight, and human well-being.</p>
+      </article>
+
+      <article>
+        <h3 data-i18n="r2Title">Brain–Computer Interfaces</h3>
+        <p data-i18n="r2Desc">Understanding and reconstructing brain signals for communication, rehabilitation, and neuroscience.</p>
+      </article>
+
+      <article>
+        <h3 data-i18n="r3Title">Computational Neuroscience</h3>
+        <p data-i18n="r3Desc">Using neural fields and representation learning to model brain activity from limited observations.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section reveal" id="publications">
+    <div class="section-title">
+      <span>02</span>
+      <h2 data-i18n="pubTitle">Publications</h2>
+    </div>
+
+    <div class="publication-box simple">
+      <p class="pub-status" data-i18n="pubStatus">Coming Soon</p>
+    </div>
+  </section>
+
+  <section class="section reveal" id="projects">
+    <div class="section-title">
+      <span>03</span>
+      <h2 data-i18n="projectsTitle">Projects</h2>
+    </div>
+
+    <div class="cards">
+      <article>
+        <h3 data-i18n="p1Title">BrainNeRF</h3>
+        <p data-i18n="p1Desc">EEG spatial super-resolution using neural fields and physics-guided learning.</p>
+      </article>
+
+      <article>
+        <h3 data-i18n="p2Title">Alzheimer’s Disease</h3>
+        <p data-i18n="p2Desc">Multimodal analysis for early diagnosis using EEG, MRI, and olfactory signals.</p>
+      </article>
+
+      <article>
+        <h3 data-i18n="p3Title">Conductive Hydrogel</h3>
+        <p data-i18n="p3Desc">Biomedical materials for flexible sensing and healthcare applications.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section reveal" id="fragments">
+    <div class="section-title">
+      <span>04</span>
+      <h2 data-i18n="fragmentsTitle">Fragments</h2>
+    </div>
+
+    <div class="fragment-intro" data-i18n="fragmentsIntro">
+      Some books, music, quotes, photographs, and small fragments of life.
+    </div>
+
+    <div class="fragment-grid">
+  <article>
+    <span>Reading</span>
+    <h3 data-i18n="booksTitle">Books I Keep Returning To</h3>
+    <p data-i18n="booksText">
+      The Beginning of Infinity<br>
+      Poor Charlie's Almanack<br>
+      Surely You're Joking, Mr. Feynman!
+    </p>
+  </article>
+
+  <article>
+    <span>Listening</span>
+    <h3 data-i18n="musicTitle">Music for Quiet Nights</h3>
+    <p data-i18n="musicText">
+      Joe Hisaishi<br>
+      Ryuichi Sakamoto<br>
+      Ólafur Arnalds
+    </p>
+  </article>
+
+  <article>
+    <span>Words</span>
+    <h3 data-i18n="quotesTitle">Words I Keep</h3>
+    <p data-i18n="quotesText">
+      Research is one way<br>
+      to return the kindness<br>
+      I once received.
+    </p>
+  </article>
+
+  <article>
+    <span>Scraps</span>
+    <h3 data-i18n="scrapsTitle">Small Fragments</h3>
+    <p data-i18n="scrapsText">
+      Forests after rain.<br>
+      Quiet campuses.<br>
+      Late-night experiments.
+    </p>
+  </article>
+</div>
+
+  </section>
+
+  <section class="ending" id="contact">
+    <div class="ending-inner">
+      <h2 data-i18n="endingText">
+        如果有一天，<br>
+        我的研究能够帮助一个人重新开口说话，<br>
+        或者帮助一个家庭更早发现疾病，<br>
+        那么，那些无数个深夜，都值得。
+      </h2>
+
+      <p class="ending-sign" data-i18n="endingSign">
+        —— 让一朵云推动另一朵云
+      </p>
+
+      <div class="contact-card">
         <div>
-          <p class="eyebrow">CURRENT PROJECT</p>
-
-          <h3>BrainNeRF</h3>
-
-          <p>
-            Physics-guided neural field for EEG spatial super-resolution,
-            reconstructing high-density EEG signals from sparse electrode observations.
-          </p>
-
-          <p class="status">Preparing AAAI Submission</p>
+          <span>Email</span>
+          <a href="mailto:sober_9@foxmail.com">sober_9@foxmail.com</a>
         </div>
 
-        <div class="flow">
-          <div>16-channel EEG</div>
-          <span>→</span>
-          <div>BrainNeRF</div>
-          <span>→</span>
-          <div>32-channel EEG</div>
+        <div>
+          <span>GitHub</span>
+          <a href="https://github.com/somber9" target="_blank" rel="noreferrer">github.com/somber9</a>
+        </div>
+
+        <div>
+          <span>Xiaohongshu</span>
+          <a href="https://xhslink.com/m/6Dnd7UVotXx" target="_blank" rel="noreferrer">xhslink.com/m/6Dnd7UVotXx</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section class="projects section reveal" id="projects">
-      <div class="section-title">
-        <span>03</span>
-        <h2>Projects</h2>
-      </div>
-
-      <div class="cards">
-        <article>
-          <h3>BrainNeRF</h3>
-          <p>EEG spatial super-resolution using neural fields and physics-guided learning.</p>
-        </article>
-
-        <article>
-          <h3>Alzheimer’s Disease</h3>
-          <p>Multimodal analysis for early diagnosis using EEG, MRI, and olfactory signals.</p>
-        </article>
-
-        <article>
-          <h3>Conductive Hydrogel</h3>
-          <p>Biomedical materials for flexible sensing and healthcare applications.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="beyond section reveal" id="beyond">
-      <div class="section-title">
-        <span>04</span>
-        <h2>Beyond Research</h2>
-      </div>
-
-      <div class="cards two">
-        <article>
-          <h3>Reading</h3>
-          <p>AI, neuroscience, philosophy, history, and the questions between them.</p>
-        </article>
-
-        <article>
-          <h3>Moments</h3>
-          <p>Forests, campuses, quiet light, and the small scenes that make research human.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="ending" id="contact">
-      <div class="ending-inner">
-        <p>
-          如果有一天，<br><br>
-          我的研究能够帮助一个人重新开口说话，<br><br>
-          或者帮助一个家庭更早发现疾病，<br><br>
-          那么，<br><br>
-          那些无数个深夜，<br><br>
-          都值得。
-        </p>
-
-        <span>—— 让一朵云推动另一朵云</span>
-
-        <div class="contact-links">
-          <a href="mailto:sober_9@foxmail.com">Email</a>
-          <a href="https://github.com/somber9" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
