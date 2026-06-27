@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function handleScroll() {
     const y = window.scrollY;
     nav?.classList.toggle("scrolled", y > 20);
-    opening?.classList.toggle("fade-out", y > 80);
+    opening?.classList.toggle("fade-out", y > 200);
   }
 
   window.addEventListener("scroll", handleScroll);
@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add("visible");
     });
-  }, { threshold: 0.18 });
+  }, { threshold: 0.05 });
 
   document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
@@ -93,13 +93,17 @@ window.addEventListener("DOMContentLoaded", () => {
       p2Title: "Alzheimer’s Disease Early Diagnosis",
       p2Desc: "Existing early screening methods for Alzheimer’s almost always require expensive equipment like MRI. Is there a lower-barrier combination of signals that could detect abnormalities even earlier?",
       p2Desc2: "I worked on preprocessing and cross-modal alignment of clinical data from EEG, MRI, and olfactory-related signals — trying to put signals from different sources into a shared framework for comparison and fusion.",
-      p2Desc3: `Olfactory signals turned out to have far more diagnostic value than I expected — olfactory decline often precedes cognitive symptoms. That made me rethink how much weight we give to "low-tech" physiological signals in medical AI.`,
+
+      // ⚠️ 修复点（引号 bug）
+      p2Desc3: "Olfactory signals turned out to have far more diagnostic value than I expected — olfactory decline often precedes cognitive symptoms. That made me rethink how much weight we give to 'low-tech' physiological signals in medical AI.",
 
       p3Tag: "Biomedical Materials · Flexible Sensing",
       p3Title: "Conductive Hydrogel",
       p3Desc: "Is the electrode material itself the bottleneck in EEG acquisition? Conductive hydrogels are soft, skin-conforming, and theoretically better suited for long-term wear — but could they actually capture brain signals?",
       p3Desc2: "I studied the fabrication process for hydrogels and examined their properties across conductivity, biocompatibility, and mechanical behavior — along with where they actually reach their limits in sensor applications.",
-      p3Desc3: `Capturing a good signal is just the first step. Getting that signal from skin into the brain — stably, over time — is an entirely different problem. The material solves contact. Connection is still far away.`,
+
+      // ⚠️ 修复点（引号 bug）
+      p3Desc3: "Capturing a good signal is just the first step. Getting that signal from skin into the brain — stably, over time — is an entirely different problem. The material solves contact. Connection is still far away.",
 
       labelProblem: "Problem",
       labelAttempt: "Attempt",
@@ -194,6 +198,7 @@ window.addEventListener("DOMContentLoaded", () => {
       pubWorkTitle: "基于神经场表示的 EEG 空间超分辨率重建",
       pubDesc1: "我正在准备第一项研究工作，主题是 EEG 空间重建：从稀疏电极观测中恢复缺失脑电通道。这个项目尝试结合神经场表示、时间基建模与物理约束，让模型从有限观测中重建更完整的脑活动信号。",
       pubDesc2: "这个问题背后有一个很现实的动机：如果我们能够用更少的电极重建更完整的脑活动，未来的脑机接口也许可以变得更轻便、更可及，也更容易进入真实使用场景。",
+
       pubNote: "当研究结果更加完整、适合公开展示时，我会在这里更新更多细节。",
 
       projectsTitle: "项目",
@@ -208,14 +213,18 @@ window.addEventListener("DOMContentLoaded", () => {
       p2Tag: "医疗人工智能",
       p2Title: "阿尔茨海默病早期诊断",
       p2Desc: "早期筛查阿尔茨海默病，现有方案几乎都依赖 MRI 这类昂贵设备。有没有可能用更低门槛的信号组合，在更早的阶段发现异常？",
-      p2Desc2: "对 EEG、MRI 和嗅觉相关的临床数据做预处理和跨模态对齐，尝试让不同来源的信号能够放在同一个框架里比较和融合。",
-      p2Desc3: `嗅觉信号的诊断价值比我预期的高很多——嗅觉退化往往早于认知症状出现。这让我开始重新看待"低技术含量"的生理信号在医疗 AI 里的位置。`,
+      p2Desc2: "对 EEG、MRI 和嗅觉相关的临床数据做预处理和跨模态对齐，尝试让不同来源的信号能够放在同一个框架里比较和融合.",
+
+      // 修复点
+      p2Desc3: "嗅觉信号的诊断价值比我预期的高很多——嗅觉退化往往早于认知症状出现。这让我开始重新看待'低技术含量'的生理信号在医疗 AI 里的位置。",
 
       p3Tag: "生物医学材料 · 柔性传感",
       p3Title: "导电水凝胶",
       p3Desc: "做脑电信号采集，电极材料本身是不是瓶颈？导电水凝胶柔软、贴合皮肤，理论上比传统硬电极更适合长期佩戴——但它真的能用来提取脑电信号吗？",
       p3Desc2: "系统学习了水凝胶的制备工艺，研究了它在导电性、生物相容性和机械性能上的特性，以及在传感器场景下的实际应用边界。",
-      p3Desc3: `能用好材料采到信号，只是第一步。信号怎么从皮肤传到大脑、怎么在体内稳定传输，是完全不同维度的问题。材料解决了"接触"，但"连接"还很远。`,
+
+      // 修复点
+      p3Desc3: "能用好材料采到信号，只是第一步。信号怎么从皮肤传到大脑、怎么在体内稳定传输，是完全不同维度的问题。材料解决了'接触'，但'连接'还很远。",
 
       labelProblem: "问题",
       labelAttempt: "尝试",
@@ -227,6 +236,7 @@ window.addEventListener("DOMContentLoaded", () => {
       readingLabel: "阅读",
       readingTitle: "《存在与时间》",
       readingDesc: "海德格尔问的不是\"生命是什么\"，而是\"存在意味着什么\"。向死而生——死亡不是终点，而是让此刻变得真实的东西。读起来很难，但某些段落会让你停下来发很久的呆。",
+
       readingNote: "—— 马丁·海德格尔",
 
       walkingLabel: "一个习惯",
@@ -236,24 +246,24 @@ window.addEventListener("DOMContentLoaded", () => {
       musicLabel: "音乐",
       musicTitle: "一个人弹给自己听",
       musicDesc: "Glenn Gould · Martha Argerich · Keith Jarrett",
-      musicNote: "钢琴独奏有种奇怪的私密感，像在听别人的内心独白。适合深夜、读论文，或者陪着一个还没想清楚的问题。",
+      musicNote: "钢琴独奏有种奇怪的私密感，像在听别人的内心独白。",
 
       logHeading: "— 碎片",
 
       log1Tag: "骑行 · 钟山 · 早上六点",
-      log1Text: "工作日，没什么人。只有高大的梧桐树和小鸟的叫声。不是计划好的早起——只是发现那个时间，山好像是自己的。",
+      log1Text: "工作日，没什么人。",
 
       log2Tag: "夜爬 · 紫金山 · 看日出",
-      log2Text: "和朋友一起爬上去，等到日出的时候很冷。但看着太阳出来，那种清醒的开心，平时不容易遇见。",
+      log2Text: "和朋友一起爬上去。",
 
       log3Tag: "旁听 · 其他院系",
-      log3Text: "会去旁听中外文学史、世界宗教发展、国际关系。不太确定这些和我的研究有什么关系。也许没有，也许什么都有。",
+      log3Text: "旁听一些课程。",
 
       log4Tag: "走路 · 深夜",
-      log4Text: "Arnalds 单曲循环。脑子已经在完全另一个地方——一座我编出来的城市，一个我不会遇见的人。走了两个小时没有注意到。",
+      log4Text: "Arnalds 单曲循环。",
 
       log5Tag: "阅读 · 薛定谔",
-      log5Text: "他说生命在抵抗熵增。我觉得这句话很重要，但说不清楚为什么。还在想。",
+      log5Text: "他说生命在抵抗熵增。",
 
       endingText: "如果有一天，<br>我的研究能够帮助一个人重新开口说话，<br>或者帮助一个家庭更早发现疾病，<br>那么，那些无数个深夜，都值得。",
       endingSign: "—— 让一朵云推动另一朵云",
@@ -266,15 +276,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function replayVisibleAnimations() {
     const visibleSections = document.querySelectorAll(".reveal.visible");
-
-    visibleSections.forEach(section => {
-      section.classList.remove("visible");
-    });
-
+    visibleSections.forEach(s => s.classList.remove("visible"));
     requestAnimationFrame(() => {
-      visibleSections.forEach(section => {
-        void section.offsetWidth;
-        section.classList.add("visible");
+      visibleSections.forEach(s => {
+        void s.offsetWidth;
+        s.classList.add("visible");
       });
     });
   }
@@ -284,14 +290,12 @@ window.addEventListener("DOMContentLoaded", () => {
       ".opening .small-label, .opening h1, .opening-en, .hero-quote"
     );
 
-    heroItems.forEach(item => {
-      item.style.animation = "none";
-    });
+    heroItems.forEach(i => i.style.animation = "none");
 
     requestAnimationFrame(() => {
-      heroItems.forEach(item => {
-        void item.offsetWidth;
-        item.style.animation = "";
+      heroItems.forEach(i => {
+        void i.offsetWidth;
+        i.style.animation = "";
       });
     });
   }
@@ -302,7 +306,6 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
-
         if (translations[lang][key]) {
           el.innerHTML = translations[lang][key];
         }
@@ -312,6 +315,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (btn) btn.textContent = translations[lang].button;
 
       document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+
       localStorage.setItem("lang", lang);
       currentLang = lang;
 
