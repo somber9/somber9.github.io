@@ -166,78 +166,41 @@
     </div>
 
     <div class="project-intro" data-i18n="projectsIntro">
-      A few research directions and early explorations that shape how I think about
-      artificial intelligence, biomedical engineering, and human-centered technology.
+      Every project started with a question I couldn’t answer. Some still don’t have answers — but the process of working through them changed how I understand the problem.
     </div>
 
     <div class="cards">
       <article>
-        <span class="project-tag" data-i18n="p1Tag">Current Research · EEG · BCI</span>
-
+        <span class="project-tag" data-i18n="p1Tag">EEG · BCI</span>
         <h3 data-i18n="p1Title">BrainNeRF</h3>
-
-        <p data-i18n="p1Desc">
-          My current research project focuses on EEG spatial super-resolution:
-          reconstructing missing brain signals from sparse electrode recordings.
-        </p>
-
-        <p data-i18n="p1Desc2">
-          I am exploring whether neural field representations and temporal basis
-          modeling can help describe brain activity beyond fixed electrode positions.
-          Instead of treating EEG only as signals recorded at separate sensors, this
-          project tries to model brain activity as a more continuous spatial-temporal field.
-        </p>
-
-        <p data-i18n="p1Desc3">
-          The long-term motivation is to reduce the dependence on dense and inconvenient
-          EEG acquisition, while still preserving useful neural information for
-          brain-computer interfaces.
-        </p>
+        <p class="project-block-label" data-i18n="labelProblem">Problem</p>
+        <p data-i18n="p1Desc">A real BCI that people actually use can’t require a dense cap full of electrodes. Portable means fewer electrodes — but fewer electrodes means less signal. How do you resolve that?</p>
+        <p class="project-block-label" data-i18n="labelAttempt">Attempt</p>
+        <p data-i18n="p1Desc2">I explored neural field representations to model brain activity as a continuous spatial-temporal field, and tried to reconstruct high-density EEG signals from sparse electrode observations — rather than treating the brain as a set of discrete sensor readings.</p>
+        <p class="project-block-label" data-i18n="labelLearned">Learned</p>
+        <p data-i18n="p1Desc3">ML-generated EEG reconstruction is often a black box: it works, but nobody knows why. What we’re building is physically grounded — interpretable, verifiable, and trustworthy enough for a clinical setting.</p>
       </article>
 
       <article>
-        <span class="project-tag" data-i18n="p2Tag">Exploration · Healthcare AI</span>
-
-        <h3 data-i18n="p2Title">Alzheimer’s Disease Analysis</h3>
-
-        <p data-i18n="p2Desc">
-          An exploratory direction on multimodal analysis for early disease screening,
-          including EEG, MRI, and olfactory-related signals.
-        </p>
-
-        <p data-i18n="p2Desc2">
-          This project reflects my interest in medical AI that does not only chase
-          accuracy numbers, but also tries to support earlier detection, better
-          clinical understanding, and more humane healthcare.
-        </p>
-
-        <p data-i18n="p2Desc3">
-          I am especially interested in how different types of biomedical signals may
-          complement each other when a single modality is noisy, incomplete, or
-          difficult to interpret.
-        </p>
+        <span class="project-tag" data-i18n="p2Tag">Healthcare AI</span>
+        <h3 data-i18n="p2Title">Alzheimer’s Disease Early Diagnosis</h3>
+        <p class="project-block-label" data-i18n="labelProblem">Problem</p>
+        <p data-i18n="p2Desc">Existing early screening methods for Alzheimer’s almost always require expensive equipment like MRI. Is there a lower-barrier combination of signals that could detect abnormalities even earlier?</p>
+        <p class="project-block-label" data-i18n="labelAttempt">Attempt</p>
+        <p data-i18n="p2Desc2">I worked on preprocessing and cross-modal alignment of clinical data from EEG, MRI, and olfactory-related signals — trying to put signals from different sources into a shared framework for comparison and fusion.</p>
+        <p class="project-block-label" data-i18n="labelLearned">Learned</p>
+        <p data-i18n="p2Desc3">Olfactory signals turned out to have far more diagnostic value than I expected — olfactory decline often precedes cognitive symptoms. That made me rethink how much weight we give to ‘low-tech’ physiological signals in medical AI.</p>
       </article>
 
       <article>
         <span class="project-tag" data-i18n="p3Tag">Biomedical Materials · Flexible Sensing</span>
-
         <h3 data-i18n="p3Title">Conductive Hydrogel</h3>
-
-        <p data-i18n="p3Desc">
-          A biomedical materials exploration related to conductive hydrogels,
-          flexible sensing, and healthcare applications.
-        </p>
-
-        <p data-i18n="p3Desc2">
-          It helped me understand that future biomedical systems are not only about
-          algorithms. They also depend on sensors, materials, hardware, and the way
-          technology touches the human body.
-        </p>
-
-        <p data-i18n="p3Desc3">
-          This experience also made me more interested in the connection between
-          physical devices and intelligent models in real healthcare scenarios.
-        </p>
+        <p class="project-block-label" data-i18n="labelProblem">Problem</p>
+        <p data-i18n="p3Desc">Is the electrode material itself the bottleneck in EEG acquisition? Conductive hydrogels are soft, skin-conforming, and theoretically better suited for long-term wear — but could they actually capture brain signals?</p>
+        <p class="project-block-label" data-i18n="labelAttempt">Attempt</p>
+        <p data-i18n="p3Desc2">I studied the fabrication process for hydrogels and examined their properties across conductivity, biocompatibility, and mechanical behavior — along with where they actually reach their limits in sensor applications.</p>
+        <p class="project-block-label" data-i18n="labelLearned">Learned</p>
+        <p data-i18n="p3Desc3">Capturing a good signal is just the first step. Getting that signal from skin into the brain — stably, over time — is an entirely different problem. The material solves contact. Connection is still far away.</p>
       </article>
     </div>
   </section>
