@@ -1410,3 +1410,8 @@ body::before{
 .cards article p:first-of-type.project-block-label {
   margin-top: 0;
 }
+
+.reveal{
+  opacity:1 !important;
+  transform:none !important;
+}
