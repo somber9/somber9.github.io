@@ -63,71 +63,81 @@ const translations = {
     researchTitle:"Research Interests",
 
     r1Title:"AI for Healthcare",
-    r1Desc:"Developing trustworthy AI methods for medical data analysis and clinical applications.",
-
     r2Title:"Brain–Computer Interfaces",
-    r2Desc:"Exploring neural signal decoding, EEG reconstruction, and brain-inspired intelligence.",
+    r3Title:"Computational Neuroscience",
 
-    r3Title:"Neuroscience",
-    r3Desc:"Interested in neural representation learning and computational modeling of brain activity.",
+    r1Desc:"Developing trustworthy AI systems for medical data.",
+    r2Desc:"Reconstructing brain signals for BCI.",
+    r3Desc:"Modeling neural activity with computational methods.",
 
     pubTitle:"Publications",
     pubStatus:"In Preparation",
     pubWorkTitle:"EEG Spatial Super-Resolution with Neural Field Representations",
-    pubDesc1:`I am currently preparing my first research work on EEG spatial reconstruction. The project studies how to recover missing EEG channels from sparse electrode observations using neural field representations, temporal basis modeling, and physics-guided constraints.`,
-    pubDesc2:`The motivation behind this work is simple: if we can reconstruct more complete brain activity from fewer electrodes, future brain-computer interfaces may become lighter, more accessible, and easier to use in real-world settings.`,
-    pubNote:"More details will be added when the work becomes ready for public release.",
+    pubDesc1:`I am currently preparing my first research work on EEG spatial reconstruction.`,
+    pubDesc2:`We aim to reconstruct brain activity from sparse electrodes.`,
+    pubNote:"More details will be added when ready.",
 
     projectsTitle:"Projects",
+    projectsIntro:"Every project started with a question I couldn’t answer.",
+
+    labelProblem:"Problem",
+    labelAttempt:"Attempt",
+    labelLearned:"Learned",
 
     p1Tag:"EEG · BCI",
     p1Title:"BrainNeRF",
-    p1Desc:"A real BCI that people actually use can’t require a dense cap full of electrodes. Portable means fewer electrodes — but fewer electrodes means less signal. How do you resolve that?",
-    p1Desc2:"I explored neural field representations to model brain activity as a continuous spatial-temporal field, and tried to reconstruct high-density EEG signals from sparse electrode observations.",
-    p1Desc3:"ML-generated EEG reconstruction is often a black box: it works, but nobody knows why. What we’re building is physically grounded — interpretable and verifiable.",
+    p1Desc:"BCI needs fewer electrodes but keeps signal quality.",
+    p1Desc2:"Neural field reconstruction of EEG signals.",
+    p1Desc3:"Interpretable EEG reconstruction is key.",
 
     p2Tag:"Healthcare AI",
-    p2Title:"Alzheimer’s Disease Early Diagnosis",
-    p2Desc:"Existing early screening methods for Alzheimer’s almost always require expensive equipment like MRI.",
-    p2Desc2:"I worked on EEG, MRI, and olfactory signal alignment for multimodal fusion.",
-    p2Desc3:`Olfactory signals turned out to have far more diagnostic value than expected — olfactory decline often precedes cognitive symptoms. This made me rethink the role of "low-tech" physiological signals in medical AI.`,
+    p2Title:"Alzheimer’s Diagnosis",
+    p2Desc:"Early diagnosis without expensive MRI.",
+    p2Desc2:"Multimodal EEG + olfactory fusion.",
+    p2Desc3:"Low-tech signals can be highly predictive.",
 
     p3Tag:"Biomedical Materials",
     p3Title:"Conductive Hydrogel",
-    p3Desc:"Is electrode material the bottleneck in EEG acquisition?",
-    p3Desc2:"I studied hydrogel conductivity, biocompatibility, and mechanical constraints.",
-    p3Desc3:"Capturing signal is only the first step. Stable transmission is a deeper problem.",
+    p3Desc:"Is electrode material the bottleneck?",
+    p3Desc2:"Studying conductivity and biocompatibility.",
+    p3Desc3:"Signal stability is the real challenge.",
 
     fragmentsTitle:"Beyond Research",
+    fragmentsIntro:"Small things outside the lab that still matter.",
+
+    readingLabel:"Reading",
+    walkingLabel:"A Habit",
+    musicLabel:"Listening",
 
     readingTitle:"What Is Life?",
-    readingDesc:`Schrödinger asked if physics could explain life. I still don't have an answer, but the question hasn't left me.`,
+    readingDesc:"Schrödinger’s question still stays with me.",
     readingNote:"— Erwin Schrödinger",
 
     walkingTitle:"Music + Walking",
-    walkingDesc:"I walk without a destination and let thoughts emerge naturally.",
+    walkingDesc:"Walking without destination.",
 
     musicTitle:"Quiet Night Music",
     musicDesc:"Joe Hisaishi · Ryuichi Sakamoto · Ólafur Arnalds",
+    musicNote:"For thinking and writing.",
 
     logHeading:"— Fragments",
 
     log1Tag:"Cycling · Zhongshan · 6 a.m.",
-    log1Text:"A quiet morning with no one around.",
+    log1Text:"Quiet morning.",
 
     log2Tag:"Hiking · Purple Mountain",
-    log2Text:"Watching sunrise with friends.",
+    log2Text:"Sunrise with friends.",
 
     log3Tag:"Auditing Courses",
-    log3Text:"Exploring ideas beyond my major.",
+    log3Text:"Learning outside my major.",
 
     log4Tag:"Walking · Late Night",
-    log4Text:"Thinking in a different world.",
+    log4Text:"Random thoughts.",
 
     log5Tag:"Reading · Schrödinger",
-    log5Text:"Still thinking about entropy and life.",
+    log5Text:"Entropy and life.",
 
-    endingText:`If one day my research can help someone speak again, or help a family detect disease earlier, then all the long nights will have meaning.`,
+    endingText:`If my work can help someone, it will be enough.`,
     endingSign:"— Let one cloud move another",
 
     button:"中文"
@@ -158,24 +168,42 @@ const translations = {
     focusLabel:"当前方向",
     focusTitle:"BrainNeRF",
     focusDesc:"物理引导 EEG 空间重建",
+    focusNote:"脑机接口研究",
 
-    p1Desc3:"机器学习 EEG 重建往往是黑箱，但我们希望让它可解释。",
+    researchTitle:"研究方向",
 
-    p2Desc3:`嗅觉信号的价值比预期更高，这让我重新看待"低技术信号"在医疗 AI 中的作用。`,
+    r1Title:"AI for Healthcare",
+    r2Title:"脑机接口",
+    r3Title:"计算神经科学",
 
-    readingTitle:"《存在与时间》",
-    readingDesc:`海德格尔问的不是生命是什么，而是存在意味着什么。`,
-    readingNote:"—— 海德格尔",
+    projectsTitle:"项目",
+    projectsIntro:"每个项目都来自一个问题。",
 
-    endingText:`如果有一天我的研究能帮助一个人重新说话，或帮助一个家庭更早发现疾病，那么一切努力都是值得的。`,
+    labelProblem:"问题",
+    labelAttempt:"尝试",
+    labelLearned:"收获",
+
+    fragmentsTitle:"科研之外",
+    fragmentsIntro:"一些生活片段",
+
+    readingLabel:"阅读",
+    walkingLabel:"习惯",
+    musicLabel:"听歌",
+
+    readingTitle:"生命是什么？",
+    readingDesc:"薛定谔的问题一直影响着我。",
+    readingNote:"—— 薛定谔",
+
+    musicNote:"用于思考与写作",
+
+    endingText:"如果研究能帮助到别人，就是意义。",
     endingSign:"—— 让一朵云推动另一朵云",
 
     button:"EN"
   }
 };
 
-let currentLang = "en";
-localStorage.setItem("lang", "en");
+let currentLang = localStorage.getItem("lang") || "en";
 
 function applyLanguage(lang){
   document.querySelectorAll("[data-i18n]").forEach(el=>{
@@ -188,6 +216,7 @@ function applyLanguage(lang){
   const btn = document.getElementById("langToggle");
   if(btn) btn.textContent = translations[lang].button;
 
+  localStorage.setItem("lang", lang);
   currentLang = lang;
 }
 
