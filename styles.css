@@ -975,6 +975,10 @@ article p + p,
 
 
 
+main{
+  transition:opacity .18s ease, transform .18s ease;
+}
+
 body.lang-switching main{
   opacity:.4;
   transform:translateY(8px);

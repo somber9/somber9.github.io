@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let currentLang = localStorage.getItem("lang") || "en";
 
-  function applyLanguage(lang) {
+  function applyLanguage(lang, isInit = false) {
 
     document.body.classList.add("lang-switching");
 
@@ -82,12 +82,16 @@ window.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("lang", lang);
       currentLang = lang;
 
-      document.body.classList.remove("lang-switching");
+      // Remove switching class after content update, let CSS fade back in
+      requestAnimationFrame(() => {
+        document.body.classList.remove("lang-switching");
+        if (!isInit) {
+          replayHeroAnimation();
+          replayVisibleAnimations();
+        }
+      });
 
-      replayHeroAnimation();
-      replayVisibleAnimations();
-
-    }, 120);
+    }, 150);
   }
 
   // -----------------------------
@@ -133,7 +137,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // init
   if (Object.keys(translations).length > 0) {
-    applyLanguage(currentLang);
+    applyLanguage(currentLang, true);
   }
 
   // cursor effect safe
