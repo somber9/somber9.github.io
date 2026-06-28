@@ -55,7 +55,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // -----------------------------
   const translations = window.translations || {}; // fallback safety
 
-  let currentLang = localStorage.getItem("lang") || "en";
+  let currentLang = "en";
 
   function applyLanguage(lang, isInit = false) {
 
@@ -79,7 +79,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
       document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
 
-      localStorage.setItem("lang", lang);
       currentLang = lang;
 
       // Remove switching class after content update, let CSS fade back in
