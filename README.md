@@ -1,10 +1,1 @@
-# Somber Cloud Academic Homepage
-
-Run locally:
-
-```bash
-npm install
-npm run dev
-```
-
-Open http://localhost:3000
+# Somber  Academic Homepage
