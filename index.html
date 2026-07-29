@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Somber | Bener Su</title>
+  <title>Somber | ᠰᠦᠮᠪᠦᠷ | Bener Su</title>
   <meta name="description" content="Bener Su / Somber — AI for Healthcare, BCI, and Biomedical Engineering." />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,16 +17,25 @@
     <a href="#projects" data-i18n="navProjects">Projects</a>
     <a href="#fragments" data-i18n="navFragments">Fragments</a>
     <a href="#contact" data-i18n="navContact">Contact</a>
-    <button class="lang-toggle" id="langToggle">中文</button>
+    <div class="lang-switcher" role="group" aria-label="Language">
+      <button class="lang-option active" type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-option mn-option" type="button" data-lang="mn" aria-pressed="false" aria-label="Traditional Mongolian">ᠮᠣᠩ</button>
+      <button class="lang-option" type="button" data-lang="zh" aria-pressed="false">中文</button>
+    </div>
   </nav>
 </header>
 
+<div class="khata-follower" aria-hidden="true">
+  <span class="khata-ribbon"></span>
+  <span class="khata-tail khata-tail-one"></span>
+  <span class="khata-tail khata-tail-two"></span>
+</div>
+
 <main id="top">
   <section class="opening">
+    <span class="mn-watermark" aria-hidden="true">ᠰᠦᠮᠪᠦᠷ</span>
     <div class="opening-inner">
-      <p class="small-label">SOMBER</p>
       <h1 data-i18n="openingTitle">Let One Cloud Carry Another Forward.</h1>
-      <p class="opening-en" data-i18n="openingSubtitle">Passing forward the kindness I have received.</p>
 
       <div class="hero-quote">
         <p data-i18n="heroQuote1">Research, to me, is not only about solving problems.</p>
@@ -38,7 +47,10 @@
   <section class="intro section reveal">
     <div class="intro-text">
 
-      <h2>Bener Su</h2>
+      <div class="name-lockup">
+        <h2 data-i18n="displayName">Bener Su</h2>
+        <span class="mongolian-name" lang="mn-Mong" aria-label="Sümber">ᠰᠦᠮᠪᠦᠷ</span>
+      </div>
 
       <div class="intro-card">
         <p class="card-title" data-i18n="eduLabel">EDUCATION</p>
@@ -78,22 +90,22 @@
       <div class="intro-card">
         <p class="card-title" data-i18n="focusLabel">CURRENT FOCUS</p>
 
-        <h3 class="focus-title" data-i18n="focusTitle">
-          BrainNeRF
-        </h3>
+        <div class="focus-project">
+          <h3 class="focus-title" data-i18n="focusTitle">PG-NSF</h3>
+          <p class="focus-desc" data-i18n="focusDesc">Physics-Guided Neural Source Fields</p>
+          <p class="focus-note" data-i18n="focusNote">Sparse-to-dense EEG reconstruction through observation-supported anchoring and structured field correction.</p>
+        </div>
 
-        <p class="focus-desc" data-i18n="focusDesc">
-          Physics-guided EEG Spatial Super-Resolution
-        </p>
-
-        <p class="focus-note" data-i18n="focusNote">
-          Ongoing research toward robust neural field reconstruction for Brain–Computer Interfaces.
-        </p>
+        <div class="focus-project">
+          <h3 class="focus-title" data-i18n="focusTitle2">EEG Foundation Models</h3>
+          <p class="focus-desc" data-i18n="focusDesc2">Generalizable representation learning for EEG</p>
+          <p class="focus-note" data-i18n="focusNote2">Exploring transferable pretraining across datasets, tasks, and montage configurations.</p>
+        </div>
 
         <div class="focus-tags">
-          <span data-i18n="tag1">AI for Healthcare</span>
-          <span data-i18n="tag2">Brain–Computer Interfaces</span>
-          <span data-i18n="tag3">Computational Neuroscience</span>
+          <span data-i18n="tag1">EEG Reconstruction</span>
+          <span data-i18n="tag2">Physics-Guided Learning</span>
+          <span data-i18n="tag3">Foundation Models</span>
         </div>
       </div>
     </div>
@@ -105,31 +117,29 @@
 
   <section class="section reveal" id="research">
     <div class="section-title">
-      <span>01</span>
       <h2 data-i18n="researchTitle">Research Interests</h2>
     </div>
 
     <div class="research-cards">
       <article>
-        <h3 data-i18n="r1Title">AI for Healthcare</h3>
-        <p data-i18n="r1Desc">Building trustworthy AI systems for medical data, clinical insight, and human well-being.</p>
+        <h3 data-i18n="r1Title">Brain–Computer Interfaces</h3>
+        <p data-i18n="r1Desc">Developing systems that interpret and reconstruct neural signals for communication, interaction, and assistive technologies.</p>
       </article>
 
       <article>
-        <h3 data-i18n="r2Title">Brain–Computer Interfaces</h3>
-        <p data-i18n="r2Desc">Understanding and reconstructing brain signals for communication, rehabilitation, and neuroscience.</p>
+        <h3 data-i18n="r2Title">Embodied Intelligence</h3>
+        <p data-i18n="r2Desc">Connecting perception, learning, and action in intelligent agents that interact with the physical world.</p>
       </article>
 
       <article>
-        <h3 data-i18n="r3Title">Computational Neuroscience</h3>
-        <p data-i18n="r3Desc">Using neural fields and representation learning to model brain activity from limited observations.</p>
+        <h3 data-i18n="r3Title">AI for Healthcare</h3>
+        <p data-i18n="r3Desc">Building trustworthy AI methods for physiological signals, clinical insight, and accessible healthcare.</p>
       </article>
     </div>
   </section>
 
   <section class="section reveal" id="publications">
     <div class="section-title">
-      <span>02</span>
       <h2 data-i18n="pubTitle">Publications</h2>
     </div>
 
@@ -161,7 +171,6 @@
 
   <section class="section reveal" id="projects">
     <div class="section-title">
-      <span>03</span>
       <h2 data-i18n="projectsTitle">Projects</h2>
     </div>
 
@@ -171,14 +180,14 @@
 
     <div class="cards">
       <article>
-        <span class="project-tag" data-i18n="p1Tag">EEG · BCI</span>
-        <h3 data-i18n="p1Title">BrainNeRF</h3>
+        <span class="project-tag" data-i18n="p1Tag">EEG · Physics-Guided Learning</span>
+        <h3 data-i18n="p1Title">PG-NSF</h3>
         <p class="project-block-label" data-i18n="labelProblem">Problem</p>
-        <p data-i18n="p1Desc">A real BCI that people actually use can’t require a dense cap full of electrodes. Portable means fewer electrodes — but fewer electrodes means less signal. How do you resolve that?</p>
+        <p data-i18n="p1Desc">Sparse EEG does not uniquely determine a dense montage: recorded electrodes constrain what is observed, while part of the underlying field remains unresolved.</p>
         <p class="project-block-label" data-i18n="labelAttempt">Attempt</p>
-        <p data-i18n="p1Desc2">I explored neural field representations to model brain activity as a continuous spatial-temporal field, and tried to reconstruct high-density EEG signals from sparse electrode observations — rather than treating the brain as a set of discrete sensor readings.</p>
+        <p data-i18n="p1Desc2">We treat reconstruction as field selection through Anchor–Correct–Render: begin with an observation-supported analytic anchor, apply structured temporal correction, and render the complete montage through one physical pathway.</p>
         <p class="project-block-label" data-i18n="labelLearned">Learned</p>
-        <p data-i18n="p1Desc3">ML-generated EEG reconstruction is often a black box: it works, but nobody knows why. What we’re building is physically grounded — interpretable, verifiable, and trustworthy enough for a clinical setting.</p>
+        <p data-i18n="p1Desc3">Reliable reconstruction is not only about plausible waveforms. It requires separating what the recorded electrodes determine from what the model must infer in the unresolved component.</p>
       </article>
 
       <article>
@@ -206,8 +215,20 @@
   </section>
 
   <section class="section reveal" id="fragments">
+    <div class="fragment-drift" aria-hidden="true">
+      <span style="--fx:7%;--fy:10%;--fs:7px;--fd:14s;--fdelay:-3s;--fr:-18deg;"></span>
+      <span style="--fx:18%;--fy:34%;--fs:4px;--fd:17s;--fdelay:-8s;--fr:28deg;"></span>
+      <span style="--fx:31%;--fy:15%;--fs:6px;--fd:19s;--fdelay:-4s;--fr:52deg;"></span>
+      <span style="--fx:46%;--fy:42%;--fs:5px;--fd:15s;--fdelay:-11s;--fr:-36deg;"></span>
+      <span style="--fx:61%;--fy:12%;--fs:8px;--fd:21s;--fdelay:-7s;--fr:14deg;"></span>
+      <span style="--fx:74%;--fy:31%;--fs:4px;--fd:16s;--fdelay:-2s;--fr:68deg;"></span>
+      <span style="--fx:88%;--fy:17%;--fs:6px;--fd:18s;--fdelay:-12s;--fr:-54deg;"></span>
+      <span style="--fx:12%;--fy:72%;--fs:5px;--fd:20s;--fdelay:-9s;--fr:33deg;"></span>
+      <span style="--fx:53%;--fy:78%;--fs:4px;--fd:13s;--fdelay:-6s;--fr:-24deg;"></span>
+      <span style="--fx:84%;--fy:68%;--fs:7px;--fd:22s;--fdelay:-15s;--fr:46deg;"></span>
+    </div>
+
     <div class="section-title">
-      <span>04</span>
       <h2 data-i18n="fragmentsTitle">Beyond Research</h2>
     </div>
 
@@ -315,17 +336,17 @@
 
     <div class="contact-card">
       <div>
-        <span>Email</span>
+        <span data-i18n="contactEmail">Email</span>
         <a href="mailto:sober_9@foxmail.com">sober_9@foxmail.com</a>
       </div>
 
       <div>
-        <span>GitHub</span>
+        <span data-i18n="contactGitHub">GitHub</span>
         <a href="https://github.com/somber9" target="_blank" rel="noreferrer">github.com/somber9</a>
       </div>
 
       <div>
-        <span>Xiaohongshu</span>
+        <span data-i18n="contactXhs">Xiaohongshu</span>
         <a href="https://xhslink.com/m/6Dnd7UVotXx" target="_blank" rel="noreferrer">xhslink.com/m/6Dnd7UVotXx</a>
       </div>
     </div>
@@ -337,6 +358,7 @@
 window.translations = {
   en: {
     button: "中文",
+    displayName: "Bener Su",
     navResearch: "Research",
     navPublications: "Publications",
     navProjects: "Projects",
@@ -355,19 +377,22 @@ window.translations = {
     affilSchool: "School of Intelligence Science and Technology<br>Nanjing University",
     affilRole: "Student Researcher · 2026 — Present",
     focusLabel: "CURRENT FOCUS",
-    focusTitle: "BrainNeRF",
-    focusDesc: "Physics-guided EEG Spatial Super-Resolution",
-    focusNote: "Ongoing research toward robust neural field reconstruction for Brain–Computer Interfaces.",
-    tag1: "AI for Healthcare",
-    tag2: "Brain–Computer Interfaces",
-    tag3: "Computational Neuroscience",
+    focusTitle: "PG-NSF",
+    focusDesc: "Physics-Guided Neural Source Fields",
+    focusNote: "Sparse-to-dense EEG reconstruction through observation-supported anchoring and structured field correction.",
+    focusTitle2: "EEG Foundation Models",
+    focusDesc2: "Generalizable representation learning for EEG",
+    focusNote2: "Exploring transferable pretraining across datasets, tasks, and montage configurations.",
+    tag1: "EEG Reconstruction",
+    tag2: "Physics-Guided Learning",
+    tag3: "Foundation Models",
     researchTitle: "Research Interests",
-    r1Title: "AI for Healthcare",
-    r1Desc: "Building trustworthy AI systems for medical data, clinical insight, and human well-being.",
-    r2Title: "Brain–Computer Interfaces",
-    r2Desc: "Understanding and reconstructing brain signals for communication, rehabilitation, and neuroscience.",
-    r3Title: "Computational Neuroscience",
-    r3Desc: "Using neural fields and representation learning to model brain activity from limited observations.",
+    r1Title: "Brain–Computer Interfaces",
+    r1Desc: "Developing systems that interpret and reconstruct neural signals for communication, interaction, and assistive technologies.",
+    r2Title: "Embodied Intelligence",
+    r2Desc: "Connecting perception, learning, and action in intelligent agents that interact with the physical world.",
+    r3Title: "AI for Healthcare",
+    r3Desc: "Building trustworthy AI methods for physiological signals, clinical insight, and accessible healthcare.",
     pubTitle: "Publications",
     pubStatus: "In Preparation",
     pubWorkTitle: "EEG Spatial Super-Resolution with Neural Field Representations",
@@ -376,14 +401,14 @@ window.translations = {
     pubNote: "More details will be added when the work becomes ready for public release.",
     projectsTitle: "Projects",
     projectsIntro: "Every project started with a question I couldn't answer. Some still don't have answers — but the process of working through them changed how I understand the problem.",
-    p1Tag: "EEG · BCI",
-    p1Title: "BrainNeRF",
+    p1Tag: "EEG · Physics-Guided Learning",
+    p1Title: "PG-NSF",
     labelProblem: "Problem",
     labelAttempt: "Attempt",
     labelLearned: "Learned",
-    p1Desc: "A real BCI that people actually use can't require a dense cap full of electrodes. Portable means fewer electrodes — but fewer electrodes means less signal. How do you resolve that?",
-    p1Desc2: "I explored neural field representations to model brain activity as a continuous spatial-temporal field, and tried to reconstruct high-density EEG signals from sparse electrode observations — rather than treating the brain as a set of discrete sensor readings.",
-    p1Desc3: "ML-generated EEG reconstruction is often a black box: it works, but nobody knows why. What we're building is physically grounded — interpretable, verifiable, and trustworthy enough for a clinical setting.",
+    p1Desc: "Sparse EEG does not uniquely determine a dense montage: recorded electrodes constrain what is observed, while part of the underlying field remains unresolved.",
+    p1Desc2: "We treat reconstruction as field selection through Anchor–Correct–Render: begin with an observation-supported analytic anchor, apply structured temporal correction, and render the complete montage through one physical pathway.",
+    p1Desc3: "Reliable reconstruction is not only about plausible waveforms. It requires separating what the recorded electrodes determine from what the model must infer in the unresolved component.",
     p2Tag: "Healthcare AI",
     p2Title: "Alzheimer's Disease Early Diagnosis",
     p2Desc: "Existing early screening methods for Alzheimer's almost always require expensive equipment like MRI. Is there a lower-barrier combination of signals that could detect abnormalities even earlier?",
@@ -419,10 +444,14 @@ window.translations = {
     log5Tag: "Reading · Schrödinger",
     log5Text: "He said that life resists entropy. That felt important, though I couldn't fully say why. Still thinking about it.",
     endingText: "If one day,<br>my research can help someone speak again,<br>or help a family discover disease earlier,<br>then all the slow nights,<br>the uncertainty, and the repeated attempts<br>will have their own meaning.",
-    endingSign: "— Let one cloud move another"
+    endingSign: "— Let one cloud move another",
+    contactEmail: "Email",
+    contactGitHub: "GitHub",
+    contactXhs: "Xiaohongshu"
   },
   zh: {
     button: "English",
+    displayName: "苏奔尔",
     navResearch: "研究",
     navPublications: "发表",
     navProjects: "项目",
@@ -441,19 +470,22 @@ window.translations = {
     affilSchool: "智能科学与技术学院<br>南京大学",
     affilRole: "学生研究员 · 2026 — 至今",
     focusLabel: "当前研究",
-    focusTitle: "BrainNeRF",
-    focusDesc: "基于物理引导的脑电空间超分辨率",
-    focusNote: "正在进行中：面向脑机接口的鲁棒神经场重建。",
-    tag1: "医疗人工智能",
-    tag2: "脑机接口",
-    tag3: "计算神经科学",
+    focusTitle: "PG-NSF",
+    focusDesc: "物理引导的神经源场",
+    focusNote: "通过观测支持的解析锚点与结构化场修正，研究从稀疏脑电到高密度脑电的重建。",
+    focusTitle2: "脑电基础模型",
+    focusDesc2: "面向脑电信号的通用表征学习",
+    focusNote2: "探索可跨数据集、任务与电极布局迁移的预训练方法。",
+    tag1: "脑电重建",
+    tag2: "物理引导学习",
+    tag3: "基础模型",
     researchTitle: "研究方向",
-    r1Title: "医疗人工智能",
-    r1Desc: "为医疗数据、临床洞察与人类健康构建可信赖的人工智能系统。",
-    r2Title: "脑机接口",
-    r2Desc: "理解并重建脑信号，用于通信、康复与神经科学研究。",
-    r3Title: "计算神经科学",
-    r3Desc: "利用神经场与表征学习，从有限观测中建模大脑活动。",
+    r1Title: "脑机接口",
+    r1Desc: "理解、重建并利用神经信号，探索面向交流、交互与辅助技术的脑机系统。",
+    r2Title: "具身智能",
+    r2Desc: "连接感知、学习与行动，研究能够在物理世界中持续交互的智能体。",
+    r3Title: "医疗人工智能",
+    r3Desc: "面向生理信号、临床洞察与普惠医疗，构建可信赖的人工智能方法。",
     pubTitle: "发表论文",
     pubStatus: "准备中",
     pubWorkTitle: "基于神经场表征的脑电空间超分辨率",
@@ -462,14 +494,14 @@ window.translations = {
     pubNote: "更多细节将在研究成果准备好公开发布后添加。",
     projectsTitle: "项目",
     projectsIntro: "每个项目都起始于一个我回答不了的问题。有些至今仍没有答案——但深入思考的过程，改变了我理解问题的方式。",
-    p1Tag: "脑电 · 脑机接口",
-    p1Title: "BrainNeRF",
+    p1Tag: "脑电 · 物理引导学习",
+    p1Title: "PG-NSF",
     labelProblem: "问题",
     labelAttempt: "尝试",
     labelLearned: "收获",
-    p1Desc: "真正实用的脑机接口不可能要求用户戴满满一顶电极帽。便携意味着更少的电极——而更少的电极意味着更少的信号。如何解决这个矛盾？",
-    p1Desc2: "我探索了神经场表征，将大脑活动建模为连续的时空场，并尝试从稀疏电极观测中重建高密度脑电信号——而不是将大脑视为一组离散的传感器读数。",
-    p1Desc3: "机器学习生成的脑电重建通常是黑盒：它能工作，但没人知道为什么。我们正在构建的是物理驱动的方法——可解释、可验证，并且在临床环境中足够可信。",
+    p1Desc: "稀疏脑电并不能唯一确定完整的高密度电极信号：已记录电极约束了可观测部分，而底层场仍有一部分无法直接确定。",
+    p1Desc2: "我们将重建视为场的选择过程，通过“锚定—修正—渲染”：从观测支持的解析锚点出发，进行结构化时序修正，再通过统一的物理路径渲染完整电极布局。",
+    p1Desc3: "可靠的脑电重建不只是生成看似合理的波形，更需要区分哪些结构由已记录电极确定，哪些内容必须由模型在未解析部分中推断。",
     p2Tag: "医疗人工智能",
     p2Title: "阿尔茨海默症早期诊断",
     p2Desc: "现有的阿尔茨海默症早期筛查方法几乎都需要昂贵的设备，如核磁共振。是否存在门槛更低的信号组合，能够更早检测到异常？",
@@ -505,10 +537,14 @@ window.translations = {
     log5Tag: "阅读 · 薛定谔",
     log5Text: "他说生命抵抗熵增。这感觉很重要，但我无法完全说清楚为什么。还在想。",
     endingText: "如果有一天，<br>我的研究能帮助某人重新开口说话，<br>或帮助一个家庭更早发现疾病，<br>那么所有那些缓慢的夜晚，<br>那些不确定，和一次次的尝试，<br>都将有其自己的意义。",
-    endingSign: "— 让一片云推动另一片云"
+    endingSign: "— 让一片云推动另一片云",
+    contactEmail: "邮箱",
+    contactGitHub: "GitHub",
+    contactXhs: "小红书"
   }
 };
 </script>
+<script src="mongolian.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
