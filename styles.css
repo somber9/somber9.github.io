@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Mongolian&family=Noto+Sans+SC:wght@400;500;600;700&display=swap");
 
 :root{
-  --bg:#e9e8ee;
-  --paper:#f5f4f8;
-  --text:#17141f;
-  --muted:#5e5a72;
-  --line:#d4d2dc;
-  --nju:#483680;
-  --nju-dark:#2f2155;
-  --soft:#e4e1f0;
-  --ink:#17141f;
+  --bg:#f5f0f4;
+  --paper:#faf7f9;
+  --text:#241f23;
+  --muted:#6d626b;
+  --line:#dacdd7;
+  --nju:#80677d;
+  --nju-dark:#4f3e4c;
+  --soft:#eadfe8;
+  --ink:#241f23;
   --font-body:Manrope,"Noto Sans SC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 
@@ -24,8 +24,8 @@ html{
 body{
   margin:0;
   background:
-    radial-gradient(circle at 90% 10%, rgba(106,63,160,.07), transparent 28%),
-    radial-gradient(circle at 10% 80%, rgba(191,135,88,.07), transparent 34%),
+    radial-gradient(circle at 90% 10%, rgba(152,126,149,.08), transparent 28%),
+    radial-gradient(circle at 10% 80%, rgba(184,166,179,.055), transparent 34%),
     var(--bg);
   color:var(--text);
   font-family:var(--font-body);
@@ -47,7 +47,7 @@ a{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  background:rgba(233,232,238,.9);
+  background:rgba(245,240,244,.9);
   backdrop-filter:blur(20px);
   border-bottom:1px solid var(--line);
   transition:
@@ -58,7 +58,7 @@ a{
 }
 
 .nav.scrolled{
-  background:rgba(238,237,244,.94);
+  background:rgba(250,247,249,.94);
   backdrop-filter:blur(24px);
   box-shadow:0 10px 40px rgba(0,0,0,.05);
   border-bottom-color:rgba(0,0,0,.05);
@@ -124,7 +124,7 @@ a{
   background:var(--nju);
   border-color:var(--nju);
   transform:translateY(-2px);
-  box-shadow:0 10px 25px rgba(106,63,160,.25);
+  box-shadow:0 10px 25px rgba(152,126,149,.25);
 }
 
 .lang-toggle:active{
@@ -133,7 +133,7 @@ a{
 
 .lang-toggle:focus-visible{
   outline:none;
-  box-shadow:0 0 0 3px rgba(106,63,160,.18);
+  box-shadow:0 0 0 3px rgba(152,126,149,.18);
 }
 
 /* Opening */
@@ -228,7 +228,7 @@ a{
 .intro-card{
   margin-top:34px;
   padding-top:26px;
-  border-top:1px solid rgba(223,211,195,.9);
+  border-top:1px solid rgba(152,126,149,.22);
 }
 
 .card-title{
@@ -316,7 +316,7 @@ a{
 
 .focus-desc{
   margin:14px 0 0;
-  color:var(--muted);
+  color:#5f535e;
   font-size:20px;
   line-height:1.55;
   max-width:620px;
@@ -325,7 +325,7 @@ a{
 .focus-note{
   margin-top:14px;
   max-width:600px;
-  color:#82796f;
+  color:#70666f;
   font-size:15px;
   line-height:1.7;
 }
@@ -333,7 +333,7 @@ a{
 .focus-project + .focus-project{
   margin-top:28px;
   padding-top:28px;
-  border-top:1px solid rgba(72,54,128,.16);
+  border-top:1px solid rgba(152,126,149,.16);
 }
 
 .focus-tags{
@@ -467,7 +467,7 @@ a{
   transform:translateY(-8px);
   background:rgba(255,252,246,.96);
   box-shadow:0 28px 70px rgba(45,35,25,.10);
-  border-color:rgba(106,63,160,.32);
+  border-color:rgba(152,126,149,.32);
 }
 
 h3{
@@ -505,7 +505,7 @@ article p + p,
   left:0;
   width:5px;
   height:100%;
-  background:linear-gradient(180deg,var(--nju),rgba(106,63,160,.18));
+  background:linear-gradient(180deg,var(--nju),rgba(152,126,149,.18));
 }
 
 .publication-box.simple{
@@ -558,7 +558,7 @@ article p + p,
   max-width:100%;
   margin-bottom:22px;
   padding:7px 12px;
-  border:1px solid rgba(106,63,160,.18);
+  border:1px solid rgba(152,126,149,.18);
   border-radius:999px;
   background:rgba(238,228,247,.55);
   color:var(--nju);
@@ -725,7 +725,7 @@ article p + p,
   overflow:hidden;
 
   background:
-    radial-gradient(circle at 18% 78%, rgba(106,63,160,.16), transparent 34%),
+    radial-gradient(circle at 18% 78%, rgba(152,126,149,.16), transparent 34%),
     radial-gradient(circle at 72% 22%, rgba(120,150,255,.12), transparent 30%),
     radial-gradient(circle at 50% 105%, rgba(80,45,140,.26), transparent 42%),
     linear-gradient(
@@ -749,7 +749,7 @@ article p + p,
   z-index:0;
 
   background:
-    radial-gradient(circle at 20% 80%, rgba(106,63,160,.20), transparent 36%),
+    radial-gradient(circle at 20% 80%, rgba(152,126,149,.20), transparent 36%),
     radial-gradient(circle at 76% 20%, rgba(90,120,255,.12), transparent 32%),
     radial-gradient(circle at 48% 52%, rgba(255,255,255,.025), transparent 58%);
 
@@ -772,7 +772,7 @@ article p + p,
     radial-gradient(ellipse at center,
       rgba(255,255,255,.14) 0%,
       rgba(190,170,255,.14) 18%,
-      rgba(106,63,160,.12) 35%,
+      rgba(152,126,149,.12) 35%,
       rgba(80,120,255,.07) 50%,
       transparent 72%
     ),
@@ -1030,14 +1030,21 @@ body::before{
   content:"";
   position:fixed;
   inset:0;
+  z-index:50;
   pointer-events:none;
+  opacity:0;
   background:
     radial-gradient(
-      280px circle at var(--x) var(--y),
-      rgba(106,63,160,.06),
-      transparent 70%
+      230px circle at var(--cursor-aura-x,50vw) var(--cursor-aura-y,50vh),
+      rgba(152,126,149,.095),
+      rgba(234,223,232,.025) 44%,
+      transparent 72%
     );
-  z-index:-1;
+  transition:opacity .5s ease;
+}
+
+body.cursor-aura-active::before{
+  opacity:1;
 }
 
 /* Mobile */
@@ -1197,7 +1204,7 @@ body::before{
 /* === Card color + photo caption polish === */
 
 .intro-card{
-  border-top-color:rgba(72,54,128,.20);
+  border-top-color:rgba(152,126,149,.20);
 }
 
 .research-cards article,
@@ -1211,7 +1218,7 @@ body::before{
       rgba(255,253,248,.94),
       rgba(246,242,251,.88)
     ) !important;
-  border:1px solid rgba(72,54,128,.18) !important;
+  border:1px solid rgba(152,126,149,.18) !important;
   box-shadow:
     0 10px 30px rgba(38,31,52,.035),
     inset 0 1px 0 rgba(255,255,255,.62);
@@ -1228,17 +1235,17 @@ body::before{
       rgba(255,253,249,.98),
       rgba(239,234,248,.94)
     ) !important;
-  border-color:rgba(72,54,128,.36) !important;
+  border-color:rgba(152,126,149,.36) !important;
   box-shadow:
     0 26px 70px rgba(38,31,52,.10),
-    0 0 0 1px rgba(72,54,128,.08),
-    0 18px 42px rgba(72,54,128,.12);
+    0 0 0 1px rgba(152,126,149,.08),
+    0 18px 42px rgba(152,126,149,.12);
 }
 
 .focus-tags > span{
   background:
     linear-gradient(180deg,rgba(255,253,248,.92),rgba(242,237,249,.90));
-  border-color:rgba(72,54,128,.22);
+  border-color:rgba(152,126,149,.22);
   color:#252033;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.65);
 }
@@ -1251,11 +1258,11 @@ body::before{
       rgba(255,255,255,.98),
       rgba(236,231,247,.96)
     );
-  border-color:rgba(72,54,128,.38);
+  border-color:rgba(152,126,149,.38);
   transform:translateY(-2px);
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,.85),
-    0 12px 30px rgba(72,54,128,.12);
+    0 12px 30px rgba(152,126,149,.12);
 }
 
 .photo{
@@ -1422,7 +1429,7 @@ body::before{
 .mongolian-name{
   height:112px;
   padding-left:24px;
-  border-left:1px solid rgba(72,54,128,.24);
+  border-left:1px solid rgba(152,126,149,.24);
   color:var(--nju);
   font-family:"Noto Sans Mongolian","Mongolian Baiti",serif;
   font-size:27px;
@@ -1560,7 +1567,7 @@ body::before{
 
 .ending{
   background:
-    radial-gradient(circle at 18% 78%,rgba(106,63,160,.15),transparent 34%),
+    radial-gradient(circle at 18% 78%,rgba(152,126,149,.15),transparent 34%),
     radial-gradient(circle at 72% 22%,rgba(120,150,255,.10),transparent 30%),
     linear-gradient(180deg,#191326 0%,#0b1020 52%,#070912 100%);
 }
@@ -1761,7 +1768,7 @@ article p,
 #fragments .frag-anchor{
   padding:34px 32px !important;
   background:linear-gradient(180deg,rgba(255,253,248,.94),rgba(246,242,251,.88)) !important;
-  border:1px solid rgba(72,54,128,.18) !important;
+  border:1px solid rgba(152,126,149,.18) !important;
   box-shadow:
     0 10px 30px rgba(38,31,52,.035),
     inset 0 1px 0 rgba(255,255,255,.62) !important;
@@ -1770,11 +1777,11 @@ article p,
 #fragments .frag-anchor:hover{
   transform:translateY(-6px);
   background:linear-gradient(180deg,rgba(255,253,249,.98),rgba(239,234,248,.94)) !important;
-  border-color:rgba(72,54,128,.36) !important;
+  border-color:rgba(152,126,149,.36) !important;
   box-shadow:
     0 26px 70px rgba(38,31,52,.10),
-    0 0 0 1px rgba(72,54,128,.08),
-    0 18px 42px rgba(72,54,128,.12) !important;
+    0 0 0 1px rgba(152,126,149,.08),
+    0 18px 42px rgba(152,126,149,.12) !important;
 }
 
 #fragments .frag-anchor::before{
@@ -1797,7 +1804,7 @@ article p,
 }
 
 #fragments .frag-anchor-note{
-  border-top-color:rgba(72,54,128,.14);
+  border-top-color:rgba(152,126,149,.14);
 }
 
 #fragments .fragment-log{
@@ -1814,7 +1821,7 @@ article p,
 }
 
 #fragments .log-item{
-  border-bottom-color:rgba(72,54,128,.14);
+  border-bottom-color:rgba(152,126,149,.14);
 }
 
 #fragments .log-item p{
@@ -1845,7 +1852,7 @@ article p,
   align-items:center;
   gap:3px;
   padding:3px;
-  border:1px solid rgba(72,54,128,.14);
+  border:1px solid rgba(152,126,149,.14);
   border-radius:999px;
   background:rgba(255,255,255,.32);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.58);
@@ -1872,11 +1879,11 @@ article p,
 .lang-option.active{
   background:var(--nju);
   color:#fff;
-  box-shadow:0 5px 14px rgba(72,54,128,.22);
+  box-shadow:0 5px 14px rgba(152,126,149,.22);
 }
 
 .lang-option:focus-visible{
-  outline:2px solid rgba(72,54,128,.35);
+  outline:2px solid rgba(152,126,149,.35);
   outline-offset:2px;
 }
 
@@ -1901,7 +1908,7 @@ body.lang-mn{
   --soft:#ece2d6;
   background:
     radial-gradient(circle at 88% 8%,rgba(170,114,52,.10),transparent 25%),
-    radial-gradient(circle at 10% 72%,rgba(72,54,128,.06),transparent 34%),
+    radial-gradient(circle at 10% 72%,rgba(152,126,149,.06),transparent 34%),
     var(--bg);
 }
 
@@ -2622,8 +2629,8 @@ body.lang-mn .khata-follower{
 .cards,
 .fragment-anchors{
   gap:0;
-  border-top:1px solid rgba(72,54,128,.16);
-  border-bottom:1px solid rgba(72,54,128,.16);
+  border-top:1px solid rgba(152,126,149,.16);
+  border-bottom:1px solid rgba(152,126,149,.16);
 }
 
 .research-cards article,
@@ -2640,7 +2647,7 @@ body.lang-mn .khata-follower{
 .cards article,
 .frag-anchor{
   position:relative;
-  border-right:1px solid rgba(72,54,128,.14) !important;
+  border-right:1px solid rgba(152,126,149,.14) !important;
 }
 
 .research-cards article:last-child,
@@ -2658,7 +2665,7 @@ body.lang-mn .khata-follower{
   right:28px;
   bottom:0;
   height:1px;
-  background:linear-gradient(90deg,transparent,rgba(72,54,128,.22),transparent);
+  background:linear-gradient(90deg,transparent,rgba(152,126,149,.22),transparent);
   opacity:0;
   transform:scaleX(.72);
   transition:opacity .28s ease,transform .36s ease;
@@ -2687,8 +2694,8 @@ body.lang-mn .khata-follower{
 
 .publication-box{
   padding:38px 42px;
-  border-top:1px solid rgba(72,54,128,.17) !important;
-  border-bottom:1px solid rgba(72,54,128,.17) !important;
+  border-top:1px solid rgba(152,126,149,.17) !important;
+  border-bottom:1px solid rgba(152,126,149,.17) !important;
 }
 
 .publication-box::before{
@@ -2699,7 +2706,7 @@ body.lang-mn .khata-follower{
 #fragments .frag-anchor{
   background:rgba(255,255,255,.10) !important;
   border:0 !important;
-  border-right:1px solid rgba(72,54,128,.14) !important;
+  border-right:1px solid rgba(152,126,149,.14) !important;
   box-shadow:none !important;
 }
 
@@ -2819,7 +2826,7 @@ body.lang-mn .focus-tags > span:hover{
   body.lang-mn .frag-anchor,
   body.lang-mn #fragments .frag-anchor{
     border-right:0 !important;
-    border-bottom:1px solid rgba(72,54,128,.14) !important;
+    border-bottom:1px solid rgba(152,126,149,.14) !important;
   }
 }
 
@@ -2884,7 +2891,7 @@ body{
   width:calc(var(--fs) * 1.35);
   height:calc(var(--fs) * .52);
   border-radius:999px;
-  background:linear-gradient(90deg,rgba(72,54,128,.08),rgba(72,54,128,.28));
+  background:linear-gradient(90deg,rgba(152,126,149,.08),rgba(152,126,149,.28));
   box-shadow:0 0 0 1px rgba(255,255,255,.22);
   opacity:0;
   transform:rotate(var(--fr));
@@ -2903,7 +2910,7 @@ body{
 }
 
 .fragment-drift span:nth-child(4n){
-  background:rgba(72,54,128,.18);
+  background:rgba(152,126,149,.18);
 }
 
 @keyframes fragmentFloat{
@@ -3436,7 +3443,7 @@ body:not(.lang-mn) .focus-tags{
 body:not(.lang-mn) .focus-tags > span{
   min-height:32px;
   padding:6px 12px;
-  border:1px solid rgba(72,54,128,.18);
+  border:1px solid rgba(152,126,149,.18);
   border-radius:9px;
   background:rgba(255,255,255,.22);
   color:#34303d;
@@ -3448,7 +3455,7 @@ body:not(.lang-mn) .focus-tags > span{
 
 body:not(.lang-mn) .focus-tags > span:hover{
   color:var(--nju-dark);
-  border-color:rgba(72,54,128,.30);
+  border-color:rgba(152,126,149,.30);
   background:rgba(255,255,255,.48);
   transform:translateY(-1px);
   box-shadow:none;
@@ -3544,5 +3551,691 @@ body.lang-mn .opening{
     height:76px;
     max-height:76px;
     font-size:12.5px;
+  }
+}
+
+/* Projects as research notes — open, editorial, and less template-like */
+
+body:not(.lang-mn) #projects .cards{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:start;
+  gap:clamp(34px,4vw,68px);
+  border:0;
+}
+
+body:not(.lang-mn) #projects .cards article{
+  min-height:0;
+  padding:25px 0 0;
+  border:0 !important;
+  border-top:1px solid rgba(152,126,149,.22) !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+body:not(.lang-mn) #projects .cards article::after{
+  display:none;
+}
+
+body:not(.lang-mn) #projects .cards article:hover{
+  transform:none;
+  border-top-color:rgba(152,126,149,.52) !important;
+  background:transparent !important;
+}
+
+body:not(.lang-mn) #projects .project-tag{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  width:auto;
+  margin:0 0 20px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:#987e95;
+  font-size:10.5px;
+  font-weight:650;
+  line-height:1.35;
+  letter-spacing:.055em;
+  text-transform:none;
+}
+
+body:not(.lang-mn) #projects .project-tag::before{
+  content:"";
+  flex:0 0 22px;
+  width:22px;
+  height:1px;
+  background:rgba(152,126,149,.48);
+}
+
+body:not(.lang-mn) #projects .cards article h3{
+  max-width:92%;
+  margin:0 0 29px;
+  font-size:clamp(21px,1.7vw,26px);
+  font-weight:600;
+  line-height:1.18;
+  letter-spacing:-.035em;
+}
+
+body:not(.lang-mn) #projects .project-block-label{
+  margin:25px 0 7px;
+  padding-top:17px;
+  border-top:1px solid rgba(152,126,149,.11);
+  color:#6d626b;
+  font-size:12px;
+  font-weight:500;
+  line-height:1.3;
+  letter-spacing:.01em;
+  text-transform:none;
+}
+
+body:not(.lang-mn) #projects .cards article p:first-of-type.project-block-label{
+  margin-top:0;
+  padding-top:0;
+  border-top:0;
+}
+
+body:not(.lang-mn) #projects .project-block-label + p{
+  color:#575264;
+  font-size:14.5px;
+  line-height:1.76;
+}
+
+@media(max-width:860px){
+  body:not(.lang-mn) #projects .cards{
+    grid-template-columns:1fr;
+    gap:48px;
+  }
+
+  body:not(.lang-mn) #projects .cards article{
+    padding-top:22px;
+  }
+
+  body:not(.lang-mn) #projects .cards article h3{
+    max-width:100%;
+  }
+}
+
+@media(pointer:coarse), (prefers-reduced-motion:reduce){
+  body::before{
+    display:none !important;
+  }
+}
+
+/* Progressive project reading */
+
+body:not(.lang-mn) #projects .cards article > .project-block-label + p{
+  color:#4f4650;
+  font-size:15.5px;
+  line-height:1.72;
+}
+
+body:not(.lang-mn) #projects .project-more{
+  margin-top:26px;
+  border-top:1px solid rgba(152,126,149,.17);
+}
+
+body:not(.lang-mn) #projects .project-more summary{
+  min-height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  color:var(--nju-dark);
+  font-size:12.5px;
+  font-weight:650;
+  line-height:1.3;
+  letter-spacing:.01em;
+  cursor:pointer;
+  list-style:none;
+  user-select:none;
+}
+
+body:not(.lang-mn) #projects .project-more summary::-webkit-details-marker{
+  display:none;
+}
+
+body:not(.lang-mn) #projects .project-more summary:focus-visible{
+  outline:2px solid rgba(128,103,125,.30);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+body:not(.lang-mn) #projects .project-more summary::after{
+  content:"+";
+  width:24px;
+  height:24px;
+  display:grid;
+  place-items:center;
+  flex:0 0 24px;
+  border:1px solid rgba(152,126,149,.22);
+  border-radius:50%;
+  color:var(--nju);
+  font-size:16px;
+  font-weight:400;
+  transition:transform .28s cubic-bezier(.22,1,.36,1),background .28s ease;
+}
+
+body:not(.lang-mn) #projects .project-more[open] summary::after{
+  content:"−";
+  transform:rotate(180deg);
+  background:rgba(152,126,149,.08);
+}
+
+body:not(.lang-mn) #projects .project-more-body{
+  margin-bottom:4px;
+  padding:4px 0 6px 18px;
+  border-left:1px solid rgba(152,126,149,.18);
+  animation:projectDetailsIn .36s cubic-bezier(.22,1,.36,1);
+}
+
+body:not(.lang-mn) #projects .project-more-body .project-block-label:first-child{
+  margin-top:0;
+  padding-top:0;
+  border-top:0;
+}
+
+@keyframes projectDetailsIn{
+  from{opacity:0;transform:translateY(-5px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+body.lang-mn #projects .project-more,
+body.lang-mn #projects .project-more-body{
+  display:contents;
+}
+
+body.lang-mn #projects .project-more summary{
+  display:none;
+}
+
+/* Refined project disclosure: a quiet chevron instead of a plus button */
+
+body:not(.lang-mn) #projects .project-more summary::after{
+  content:"";
+  width:8px;
+  height:8px;
+  display:block;
+  flex:0 0 8px;
+  margin-right:5px;
+  border:0;
+  border-right:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor;
+  border-radius:0;
+  background:transparent;
+  color:var(--nju);
+  transform:translateY(-2px) rotate(45deg);
+  transition:transform .28s cubic-bezier(.22,1,.36,1), color .24s ease;
+}
+
+body:not(.lang-mn) #projects .project-more[open] summary::after{
+  content:"";
+  background:transparent;
+  transform:translateY(2px) rotate(225deg);
+}
+
+/* Mongolian projects: one composed reading strip per project */
+
+body.lang-mn #projects{
+  display:block;
+}
+
+body.lang-mn #projects .section-title{
+  margin-bottom:28px;
+}
+
+body.lang-mn #projects .section-title h2{
+  height:116px;
+}
+
+body.lang-mn #projects .project-intro{
+  width:max-content;
+  max-width:100%;
+  height:300px;
+  margin:0 20px -252px auto;
+  padding:0;
+  position:relative;
+  z-index:2;
+}
+
+body.lang-mn #projects .cards{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+}
+
+body.lang-mn #projects .cards article,
+body.lang-mn #projects .cards article:first-child{
+  position:relative;
+  grid-column:auto;
+  min-height:560px;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:start;
+  justify-content:center;
+  gap:14px;
+  padding:38px 34px 42px;
+  overflow-x:auto;
+  border:0 !important;
+  border-bottom:1px solid rgba(128,103,125,.16) !important;
+  background:transparent !important;
+}
+
+body.lang-mn #projects .cards article:first-child{
+  padding-top:82px;
+}
+
+body.lang-mn #projects .cards article:last-child{
+  border-bottom:0 !important;
+}
+
+body.lang-mn #projects .project-more{
+  display:block;
+  height:470px;
+  margin:0;
+}
+
+body.lang-mn #projects .project-more-body{
+  height:470px;
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+}
+
+body.lang-mn #projects .cards article [data-i18n]{
+  width:max-content;
+  height:470px;
+  margin:0;
+  line-height:1.62;
+}
+
+body.lang-mn #projects .cards article .project-tag{
+  width:38px;
+  height:440px !important;
+  margin:0 !important;
+  padding:12px 7px;
+  border:0;
+  border-left:1px solid rgba(128,103,125,.18);
+  border-radius:0;
+  background:transparent;
+  color:var(--nju);
+}
+
+body.lang-mn #projects .cards article .project-block-label{
+  width:30px;
+  height:170px;
+  padding-top:2px;
+  color:var(--nju);
+  font-size:13px;
+  letter-spacing:.04em;
+}
+
+body.lang-mn #projects .cards article h3{
+  height:440px;
+  color:var(--nju-dark);
+  font-size:21px;
+  line-height:1.45;
+}
+
+body.lang-mn #projects .cards article:first-child h3.latin-only{
+  position:absolute;
+  top:30px;
+  left:50%;
+  width:auto !important;
+  height:auto !important;
+  padding:0 0 8px;
+  border:0;
+  border-bottom:1.5px solid var(--nju);
+  font-size:20px;
+  line-height:1 !important;
+  white-space:nowrap;
+  transform:translateX(-50%);
+}
+
+@media(max-width:720px){
+  body.lang-mn #projects .cards article,
+  body.lang-mn #projects .cards article:first-child{
+    justify-content:start;
+    padding-left:22px;
+    padding-right:22px;
+  }
+}
+
+/* The longer closing statement needs more breathing room without becoming oversized */
+
+body:not(.lang-mn) .ending-inner{
+  width:min(880px,100%);
+}
+
+body:not(.lang-mn) .ending h2{
+  font-size:clamp(16px,1.35vw,22px);
+  line-height:1.78;
+  text-wrap:balance;
+}
+
+body.lang-mn .ending h2{
+  height:650px;
+  font-size:17.5px;
+  line-height:1.62;
+}
+
+/* Mongolian project reading bands — keep the first view calm and intentional */
+
+body.lang-mn #projects .project-intro{
+  display:none;
+}
+
+body.lang-mn #projects .section-title{
+  margin-bottom:36px;
+}
+
+body.lang-mn #projects .cards article,
+body.lang-mn #projects .cards article:first-child{
+  min-height:410px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  padding:38px 46px;
+  overflow:hidden;
+}
+
+body.lang-mn #projects .cards article:first-child{
+  padding-top:38px;
+}
+
+body.lang-mn #projects .cards article [data-i18n]{
+  height:320px;
+}
+
+body.lang-mn #projects .cards article .project-tag{
+  width:36px;
+  height:290px !important;
+  flex:0 0 36px;
+}
+
+body.lang-mn #projects .cards article .project-block-label{
+  width:28px;
+  height:132px;
+  flex:0 0 28px;
+}
+
+body.lang-mn #projects .cards article h3{
+  width:max-content;
+  height:300px;
+  flex:0 0 auto;
+  font-size:20px;
+}
+
+body.lang-mn #projects .cards article:first-child h3.latin-only{
+  position:static;
+  width:118px !important;
+  height:auto !important;
+  padding:0 22px 8px 0;
+  border:0;
+  border-right:1px solid rgba(128,103,125,.22);
+  font-size:20px;
+  text-align:right;
+  transform:none;
+}
+
+body.lang-mn #projects .cards article > .project-block-label + p{
+  width:max-content;
+  max-width:none;
+  height:320px;
+  flex:0 0 auto;
+}
+
+body.lang-mn #projects .project-more{
+  height:320px;
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  margin-left:8px;
+  flex:0 0 auto;
+}
+
+body.lang-mn #projects .project-more summary{
+  width:38px;
+  height:290px;
+  display:flex !important;
+  position:relative;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  box-sizing:border-box;
+  padding:10px 7px;
+  border-left:1px solid rgba(128,103,125,.30);
+  background:linear-gradient(90deg,rgba(128,103,125,.055),transparent 72%);
+  color:var(--nju-dark);
+  font-weight:650;
+  cursor:pointer;
+  list-style:none;
+  writing-mode:horizontal-tb;
+  text-orientation:mixed;
+}
+
+body.lang-mn #projects .project-more summary [data-i18n]{
+  width:auto !important;
+  height:auto !important;
+  max-height:226px;
+  display:block;
+  overflow:hidden;
+  flex:0 0 auto;
+  writing-mode:vertical-lr;
+  text-orientation:mixed;
+}
+
+body.lang-mn #projects .project-more summary::-webkit-details-marker{
+  display:none;
+}
+
+body.lang-mn #projects .project-more summary::after{
+  content:"⌄";
+  width:25px;
+  height:25px;
+  display:grid;
+  place-items:center;
+  color:var(--nju-dark);
+  font-family:var(--font-body);
+  font-size:22px;
+  font-weight:700;
+  line-height:1;
+  position:static;
+  flex:0 0 25px;
+  margin-top:12px;
+  writing-mode:horizontal-tb;
+  text-orientation:mixed;
+  transform:none;
+  transition:transform .25s ease,color .25s ease;
+}
+
+body.lang-mn #projects .project-more[open] summary::after{
+  content:"⌃";
+  transform:none;
+}
+
+/* Chinese typography — quiet editorial body with a handwritten closing note */
+
+@font-face{
+  font-family:"ZCOOL KuaiLe Local";
+  src:url("assets/fonts/ZCOOLKuaiLe-Regular.ttf") format("truetype");
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+}
+
+@font-face{
+  font-family:"LXGW WenKai Ending";
+  src:url("assets/fonts/LXGWWenKai-Light-ending.woff2") format("woff2");
+  font-style:normal;
+  font-weight:300;
+  font-display:swap;
+}
+
+body[data-language="zh"]{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+
+body[data-language="zh"] .opening h1,
+body[data-language="zh"] .name-lockup h2,
+body[data-language="zh"] .section-title h2,
+body[data-language="zh"] .research-cards h3,
+body[data-language="zh"] .publication-box h3,
+body[data-language="zh"] #projects .cards h3,
+body[data-language="zh"] #fragments h3{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-weight:500;
+}
+
+body[data-language="zh"] .ending h2{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:clamp(16px,1.45vw,22px);
+  font-weight:300;
+  line-height:1.96;
+  letter-spacing:.035em;
+  color:rgba(255,249,246,.92);
+  font-synthesis:none;
+}
+
+body[data-language="zh"] .ending-sign{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-weight:300;
+  letter-spacing:.03em;
+}
+
+/* Chinese readability — clear without becoming heavy */
+
+body[data-language="zh"] .section{
+  scroll-margin-top:88px;
+}
+
+body[data-language="zh"] .project-intro,
+body[data-language="zh"] .fragment-intro{
+  color:#3f3740;
+  font-size:17px;
+  font-weight:400;
+  line-height:1.78;
+}
+
+body[data-language="zh"] #projects .project-tag{
+  color:#6d566b;
+  font-size:12.5px;
+  font-weight:500;
+}
+
+body[data-language="zh"] #projects .project-block-label{
+  color:#574a56;
+  font-size:13px;
+  font-weight:500;
+}
+
+body[data-language="zh"] #projects .cards article > .project-block-label + p,
+body[data-language="zh"] #projects .project-more-body > p:not(.project-block-label){
+  color:#39323a;
+  font-size:15.8px;
+  font-weight:400;
+  line-height:1.82;
+}
+
+body[data-language="zh"] #projects .project-more summary{
+  color:#4c3e4b;
+  font-size:13px;
+  font-weight:600;
+}
+
+body.lang-mn #projects .project-more:not([open]) .project-more-body{
+  display:none;
+}
+
+body.lang-mn #projects .project-more[open] .project-more-body{
+  height:320px;
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  animation:projectDetailsIn .32s cubic-bezier(.22,1,.36,1);
+}
+
+body.lang-mn #projects .project-more-body > p:not(.project-block-label){
+  width:max-content;
+  max-width:none;
+  height:320px;
+}
+
+@media(max-width:860px){
+  body.lang-mn #projects .cards article,
+  body.lang-mn #projects .cards article:first-child{
+    justify-content:flex-start;
+    overflow-x:auto;
+  }
+}
+
+/* Horizontal Mongolian project rail */
+
+body.lang-mn #projects .cards{
+  display:flex;
+  grid-template-columns:none;
+  gap:22px;
+  width:calc(100% + 8vw);
+  margin-right:-8vw;
+  padding:0 8vw 22px 0;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  scroll-padding-inline:0;
+  overscroll-behavior-inline:contain;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(128,103,125,.30) rgba(128,103,125,.07);
+}
+
+body.lang-mn #projects .cards::-webkit-scrollbar{
+  height:5px;
+}
+
+body.lang-mn #projects .cards::-webkit-scrollbar-track{
+  background:rgba(128,103,125,.07);
+}
+
+body.lang-mn #projects .cards::-webkit-scrollbar-thumb{
+  border-radius:999px;
+  background:rgba(128,103,125,.30);
+}
+
+body.lang-mn #projects .cards article,
+body.lang-mn #projects .cards article:first-child{
+  width:auto;
+  min-width:0;
+  flex:0 0 min(840px,76vw);
+  scroll-snap-align:start;
+  scroll-snap-stop:always;
+  border:1px solid rgba(128,103,125,.14) !important;
+  border-radius:2px !important;
+  background:rgba(255,255,255,.12) !important;
+}
+
+body.lang-mn #projects .cards article:hover{
+  transform:none;
+  border-color:rgba(128,103,125,.24) !important;
+  background:rgba(255,255,255,.22) !important;
+}
+
+body.lang-mn #projects .project-more summary:focus-visible{
+  outline:1px solid rgba(128,103,125,.32);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+@media(max-width:720px){
+  body.lang-mn #projects .cards{
+    width:calc(100% + 28px);
+    margin-right:-28px;
+    padding-right:28px;
+  }
+
+  body.lang-mn #projects .cards article,
+  body.lang-mn #projects .cards article:first-child{
+    flex-basis:88vw;
   }
 }

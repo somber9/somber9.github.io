@@ -113,6 +113,10 @@ window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.toggle("lang-mn", lang === "mn");
       document.body.dataset.language = lang;
 
+      document.querySelectorAll("#projects .project-more").forEach(details => {
+        details.open = false;
+      });
+
       currentLang = lang;
 
       // Remove switching class after content update, let CSS fade back in
@@ -183,21 +187,26 @@ window.addEventListener("DOMContentLoaded", () => {
     applyLanguage(currentLang, true);
   }
 
-  // cursor effect safe
+  // Quiet background aura and fragment parallax
   let pointerFrame = 0;
   let pointerX = window.innerWidth / 2;
   let pointerY = window.innerHeight / 2;
   const fragmentsSection = document.querySelector("#fragments");
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const hasFinePointer = window.matchMedia("(pointer: fine)").matches;
+  let auraX = pointerX;
+  let auraY = pointerY;
 
   document.addEventListener("pointermove", (e) => {
     pointerX = e.clientX;
     pointerY = e.clientY;
 
+    if (hasFinePointer && !prefersReducedMotion) {
+      document.body.classList.add("cursor-aura-active");
+    }
+
     if (!pointerFrame) {
       pointerFrame = window.requestAnimationFrame(() => {
-        document.body.style.setProperty("--x", pointerX + "px");
-        document.body.style.setProperty("--y", pointerY + "px");
-
         if (fragmentsSection) {
           const rect = fragmentsSection.getBoundingClientRect();
           const isNearFragments = pointerY >= rect.top && pointerY <= rect.bottom;
@@ -215,6 +224,24 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }, { passive: true });
 
+  if (hasFinePointer && !prefersReducedMotion) {
+    const animateAura = () => {
+      auraX += (pointerX - auraX) * .105;
+      auraY += (pointerY - auraY) * .105;
+      document.body.style.setProperty("--cursor-aura-x", `${auraX.toFixed(2)}px`);
+      document.body.style.setProperty("--cursor-aura-y", `${auraY.toFixed(2)}px`);
+      window.requestAnimationFrame(animateAura);
+    };
+
+    document.addEventListener("pointerout", event => {
+      if (!event.relatedTarget) {
+        document.body.classList.remove("cursor-aura-active");
+      }
+    }, { passive: true });
+
+    window.requestAnimationFrame(animateAura);
+  }
+
   fragmentsSection?.addEventListener("pointerleave", () => {
     fragmentsSection.style.setProperty("--fragment-x", "0px");
     fragmentsSection.style.setProperty("--fragment-y", "0px");
@@ -222,9 +249,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Mongolian khata — softly follows pointer movement
   const khata = document.querySelector(".khata-follower");
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  if (khata && !reducedMotion) {
+  if (khata && !prefersReducedMotion) {
     let targetX = window.innerWidth * .72;
     let targetY = window.innerHeight * .32;
     let currentX = targetX;
